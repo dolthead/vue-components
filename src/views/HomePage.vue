@@ -5,6 +5,8 @@
       <PaymentSegments></PaymentSegments>
       <br>
       <ChipSegments></ChipSegments>
+      <br>
+      <TabSegments></TabSegments>
 
     </ion-content>
   </ion-page>
@@ -14,4 +16,5 @@
   import { IonContent, IonPage } from '@ionic/vue';
   import PaymentSegments from '../components/PaymentSegments.vue';
   import ChipSegments from '../components/ChipSegments.vue';
+  import TabSegments from '../components/TabSegments.vue';
 </script>
