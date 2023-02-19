@@ -7,6 +7,8 @@
       <ChipSegments></ChipSegments>
       <br>
       <TabSegments></TabSegments>
+      <br>
+      <DotSegments></DotSegments>
 
     </ion-content>
   </ion-page>
@@ -17,4 +19,5 @@
   import PaymentSegments from '../components/PaymentSegments.vue';
   import ChipSegments from '../components/ChipSegments.vue';
   import TabSegments from '../components/TabSegments.vue';
+  import DotSegments from '../components/DotSegments.vue';
 </script>
