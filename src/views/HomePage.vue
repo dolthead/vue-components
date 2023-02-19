@@ -9,6 +9,8 @@
       <TabSegments></TabSegments>
       <br>
       <DotSegments></DotSegments>
+      <br>
+      <MdSegments></MdSegments>
 
     </ion-content>
   </ion-page>
@@ -20,4 +22,5 @@
   import ChipSegments from '../components/ChipSegments.vue';
   import TabSegments from '../components/TabSegments.vue';
   import DotSegments from '../components/DotSegments.vue';
+  import MdSegments from '../components/MdSegments.vue';
 </script>
