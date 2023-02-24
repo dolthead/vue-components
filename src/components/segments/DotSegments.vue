@@ -69,7 +69,7 @@ ion-segment {
         -moz-border-radius: 50px !important;
         padding: 0px !important;
         margin: 0px !important;
-        right: -47%;
+        right: -49%;
     }
 }
 
