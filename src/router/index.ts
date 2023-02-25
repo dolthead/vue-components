@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
 import { RouteRecordRaw } from 'vue-router';
-import HomePage from '../views/HomePage.vue'
+import HomePage from '@/views/HomePage.vue'
 
 // 'Segments', 'Toolbars', 'Widgets', 'Slides', 'Cards', 'Menus', 'Screens', 'Modals', 'Lists', 'Tabs', 'Inputs',
 const routes: Array<RouteRecordRaw> = [
@@ -16,12 +16,32 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/Segments',
     name: 'Segments',
-    component: () => import('../views/Segments.vue'),
+    component: () => import('@/views/Segments.vue'),
   },
   {
     path: '/Toolbars',
     name: 'Toolbars',
-    component: () => import('../views/Toolbars.vue'),
+    component: () => import('@/views/Toolbars.vue'),
+  },
+  {
+    path: '/Menus',
+    name: 'Menus',
+    component: () => import('@/views/Menus.vue'),
+  },
+  {
+    path: '/AvatarMenu',
+    name: 'AvatarMenu',
+    component: () => import('@/components/menus/AvatarMenu.vue'),
+  },
+  {
+    path: '/LogoMenu',
+    name: 'LogoMenu',
+    component: () => import('@/components/menus/LogoMenu.vue'),
+  },
+  {
+    path: '/Modals',
+    name: 'Modals',
+    component: () => import('@/views/Modals.vue'),
   },
 ]
 
