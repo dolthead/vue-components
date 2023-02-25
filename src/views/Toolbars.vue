@@ -22,20 +22,28 @@
     </ion-header>
     <ion-content class="ion-padding" color="light">
 
+      <ion-text>Calendar Toolbar</ion-text>
       <CalendarToolbar></CalendarToolbar>
       <br>
+      <ion-text>Notes Toolbar</ion-text>
       <NotesToolbar></NotesToolbar>
       <br>
+      <ion-text>CMI Toolbar</ion-text>
       <CMIToolbar></CMIToolbar>
       <br>
+      <ion-text>Avatar Toolbar</ion-text>
       <AvatarToolbar></AvatarToolbar>
       <br>
+      <ion-text>Search Toolbar</ion-text>
       <SearchToolbar></SearchToolbar>
       <br>
+      <ion-text>Stacked Toolbar</ion-text>
       <StackedToolbar></StackedToolbar>
       <br>
+      <ion-text>Profile Toolbar</ion-text>
       <ProfileToolbar></ProfileToolbar>
       <br>
+      <ion-text>Icons Toolbar</ion-text>
       <IconsToolbar></IconsToolbar>
 
     </ion-content>

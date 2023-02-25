@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-  import { IonContent, IonPage, IonHeader, IonToolbar, IonButtons, IonBackButton, IonTitle } from '@ionic/vue';
+  import { IonContent, IonPage, IonHeader, IonToolbar, IonButtons, IonBackButton, IonTitle, IonText } from '@ionic/vue';
   import PaymentSegments from '../components/segments/PaymentSegments.vue';
   import ChipSegments from '../components/segments/ChipSegments.vue';
   import TabSegments from '../components/segments/TabSegments.vue';
@@ -19,14 +19,19 @@
     </ion-header>
     <ion-content class="ion-padding" color="light">
 
+      <ion-text>Payment Segments</ion-text>
       <PaymentSegments></PaymentSegments>
       <br>
+      <ion-text>Chip Segments</ion-text>
       <ChipSegments></ChipSegments>
       <br>
+      <ion-text>Tab Segments</ion-text>
       <TabSegments></TabSegments>
       <br>
+      <ion-text>Dot Segments</ion-text>
       <DotSegments></DotSegments>
       <br>
+      <ion-text>MD Segments</ion-text>
       <MdSegments></MdSegments>
 
     </ion-content>

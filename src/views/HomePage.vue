@@ -3,7 +3,7 @@
   import { logoIonic, logoVue, logoGithub } from 'ionicons/icons';
 
   const sections = [
-    'Segments', 'Toolbars', 'Menus', 'Modals'
+    'Segments', 'Toolbars', 'Menus', 'Modals', 'Lists'
     // 'Segments', 'Toolbars', 'Widgets', 'Slides', 'Cards', 'Menus', 'Screens', 'Modals', 'Lists', 'Tabs', 'Inputs',
   ].sort();
 </script>
@@ -25,7 +25,7 @@
         <ion-card-content>
           <p>
             Based on the designs on <a href="https://www.codemyionic.com/" target="_blank">CodeMyIonic.com</a> from <a href="https://github.com/sidh41" target="_blank">@sidh41</a>.
-            Visit CodeMyIonic.com for side-by-side Angular, React, and Vue examples.
+            Visit CodeMyIonic.com for side-by-side Angular, React, and (coming soon) Vue examples.
           </p>
           <br>
           <p>
@@ -33,6 +33,10 @@
             Browse this code at 
             <a href="https://github.com/dolthead/vue-components" target="_blank">github.com/dolthead/vue-components</a>. 
             
+          </p>
+          <br>
+          <p>
+            More examples will be added each week, so check back again soon!
           </p>
         </ion-card-content>
       </ion-card>

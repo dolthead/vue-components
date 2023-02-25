@@ -43,6 +43,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Modals',
     component: () => import('@/views/Modals.vue'),
   },
+  {
+    path: '/Lists',
+    name: 'Lists',
+    component: () => import('@/views/Lists.vue'),
+  },
 ]
 
 const router = createRouter({
