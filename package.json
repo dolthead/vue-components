@@ -8,7 +8,8 @@
     "e2e": "cypress run",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "serve:pwa": "vite build --mode pwa && vite preview --host --mode pwa"
+    "serve:pwa": "vite build --mode pwa && vite preview --host --mode pwa",
+    "deploy": "vue-tsc --noEmit && vite build && firebase deploy"
   },
   "dependencies": {
     "@capacitor/app": "4.0.1",

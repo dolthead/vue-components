@@ -39,7 +39,7 @@ import { caretBack } from 'ionicons/icons';
             </ion-list>
         </ion-content>
         <ion-footer>
-            <ion-button fill="solid" expand="block" shape="" color="primary" class="ion-margin">
+            <ion-button fill="solid" expand="block" color="primary" class="ion-margin">
                 Get Started
             </ion-button>
             <ion-grid class="ion-hide">
