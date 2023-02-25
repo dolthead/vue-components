@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-  import { IonContent, IonPage, IonHeader, IonToolbar, IonButtons, IonBackButton, IonTitle } from '@ionic/vue';
+  import { IonContent, IonPage, IonHeader, IonToolbar, IonButtons, IonBackButton, IonTitle, IonText } from '@ionic/vue';
   import CalendarToolbar from '@/components/toolbars/CalendarToolbar.vue';
   import NotesToolbar from '@/components/toolbars/NotesToolbar.vue';
   import CMIToolbar from '@/components/toolbars/CMIToolbar.vue';
@@ -11,7 +11,7 @@
 </script>
 
 <template>
-  <ion-page mode="ios">
+  <ion-page>
     <ion-header>
       <ion-toolbar>
         <ion-buttons slot="start">
