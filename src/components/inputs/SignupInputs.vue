@@ -64,7 +64,7 @@ import { chevronBackOutline } from 'ionicons/icons';
                                     <ion-col size="12">
                                         <ion-row class="ion-margin-bottom">
                                             <ion-col size="12">
-                                                <ion-button fill="solid" color="primary" size="medium"
+                                                <ion-button fill="solid" color="primary" size="default"
                                                     class="login-button ion-text-capitalize ion-no-margin">
                                                     Sign Up
                                                 </ion-button>

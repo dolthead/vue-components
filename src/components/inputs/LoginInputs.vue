@@ -37,13 +37,13 @@ import { IonContent, IonPage, IonItem, IonLabel, IonGrid, IonRow, IonCol, IonInp
                                     <ion-col size="12">
                                         <ion-row class="ion-margin-bottom">
                                             <ion-col size="6">
-                                                <ion-button fill="solid" shape="round" color="primary" size="medium"
+                                                <ion-button fill="solid" shape="round" color="primary" size="default"
                                                     class="login-button ion-text-capitalize ion-no-margin">
                                                     Login
                                                 </ion-button>
                                             </ion-col>
                                             <ion-col size="6">
-                                                <ion-button fill="clear" shape="round" color="medium" size="medium"
+                                                <ion-button fill="clear" shape="round" color="medium" size="default"
                                                     class="back-button ion-text-capitalize ion-no-margin">
                                                     Back to Home
                                                 </ion-button>

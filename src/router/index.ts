@@ -53,6 +53,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Inputs',
     component: () => import('@/views/Inputs.vue'),
   },
+  {
+    path: '/Tabs',
+    name: 'Tabs',
+    component: () => import('@/views/Tabs.vue'),
+  },
 ]
 
 const router = createRouter({
