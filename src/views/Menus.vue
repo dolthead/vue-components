@@ -11,7 +11,7 @@
         <ion-buttons slot="start">
           <ion-back-button default-href="/" />
         </ion-buttons>
-        <ion-title>Menus</ion-title>
+        <ion-title>Menus (w/ Split Pane)</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content color="light">

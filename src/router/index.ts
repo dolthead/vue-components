@@ -48,6 +48,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Lists',
     component: () => import('@/views/Lists.vue'),
   },
+  {
+    path: '/Inputs',
+    name: 'Inputs',
+    component: () => import('@/views/Inputs.vue'),
+  },
 ]
 
 const router = createRouter({
