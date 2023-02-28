@@ -129,7 +129,7 @@ ion-button {
 .title-row {
     padding-top: 16px !important;
     ion-col {
-      display: flex;
+      display: block;
     }
   }
   </style>

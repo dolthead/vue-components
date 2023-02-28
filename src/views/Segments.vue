@@ -19,22 +19,31 @@
     </ion-header>
     <ion-content class="ion-padding" color="light">
 
-      <ion-text>Payment Segments</ion-text>
+      <ion-text class="text-padding">Payment Segments</ion-text>
       <PaymentSegments></PaymentSegments>
       <br>
-      <ion-text>Chip Segments</ion-text>
+      <ion-text class="text-padding">Chip Segments</ion-text>
       <ChipSegments></ChipSegments>
       <br>
-      <ion-text>Tab Segments</ion-text>
+      <ion-text class="text-padding">Tab Segments</ion-text>
       <TabSegments></TabSegments>
       <br>
-      <ion-text>Dot Segments</ion-text>
+      <ion-text class="text-padding">Dot Segments</ion-text>
       <DotSegments></DotSegments>
       <br>
-      <ion-text>MD Segments</ion-text>
+      <ion-text class="text-padding">MD Segments</ion-text>
       <MdSegments></MdSegments>
 
     </ion-content>
   </ion-page>
 </template>
 
+<style lang="scss" scoped>
+  .text-padding {
+    display: block;
+    margin: 0 16px 8px 16px;
+    &:first-child {
+      margin-top: 16px;
+    }
+  }
+</style>
