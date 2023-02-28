@@ -1,32 +1,28 @@
 <script lang="ts" setup>
 import { IonTabs, IonTabBar, IonTabButton, IonIcon, IonLabel, IonRouterOutlet } from '@ionic/vue';
 import { homeOutline, searchOutline, notificationsOutline, personOutline } from 'ionicons/icons';
-import { ref } from 'vue';
 
-const tab = ref(0);
+import { useTabs } from './useTabs'; // this is only needed when the tabs are used out of proper Ionic page structure
+const { tabBarRef } = useTabs(); // this is only needed when the tabs are used out of proper Ionic page structure
 </script>
 
 <template>
     <ion-tabs class="tabs-inline">
         <ion-router-outlet></ion-router-outlet>
-        <ion-tab-bar slot="bottom">
-            <ion-tab-button tab="tab1" :aria-selected="tab === 0" :class="tab === 0 && 'tab-selected'" @click="tab = 0"
-                    class="tab-has-label tab-has-icon tab-layout-icon-top ion-activatable ion-selectable ion-focusable">
+        <ion-tab-bar slot="bottom" ref="tabBarRef">
+            <ion-tab-button tab="tab1">
                 <ion-icon :icon="homeOutline"></ion-icon>
                 <ion-label>Home</ion-label>
             </ion-tab-button>
-            <ion-tab-button tab="tab2" :aria-selected="tab === 1" :class="tab === 1 && 'tab-selected'" @click="tab = 1"
-                    class="tab-has-label tab-has-icon tab-layout-icon-top ion-activatable ion-selectable ion-focusable">
+            <ion-tab-button tab="tab2">
                 <ion-icon :icon="searchOutline"></ion-icon>
                 <ion-label>Search</ion-label>
             </ion-tab-button>
-            <ion-tab-button tab="tab3" :aria-selected="tab === 2" :class="tab === 2 && 'tab-selected'" @click="tab = 2"
-                    class="tab-has-label tab-has-icon tab-layout-icon-top ion-activatable ion-selectable ion-focusable">
+            <ion-tab-button tab="tab3">
                 <ion-icon :icon="notificationsOutline"></ion-icon>
                 <ion-label>Notifications</ion-label>
             </ion-tab-button>
-            <ion-tab-button tab="tab4" :aria-selected="tab === 3" :class="tab === 3 && 'tab-selected'" @click="tab = 3"
-                    class="tab-has-label tab-has-icon tab-layout-icon-top ion-activatable ion-selectable ion-focusable">
+            <ion-tab-button tab="tab4">
                 <ion-icon :icon="personOutline"></ion-icon>
                 <ion-label>Profile</ion-label>
             </ion-tab-button>
