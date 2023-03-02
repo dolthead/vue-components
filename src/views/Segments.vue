@@ -10,14 +10,14 @@
 <template>
   <ion-page>
     <ion-header>
-      <ion-toolbar>
+      <ion-toolbar color="toolbar">
         <ion-buttons slot="start">
           <ion-back-button default-href="/" />
         </ion-buttons>
         <ion-title>Segments</ion-title>
       </ion-toolbar>
     </ion-header>
-    <ion-content class="ion-padding" color="light">
+    <ion-content class="ion-padding">
 
       <ion-text class="text-padding">Payment Segments</ion-text>
       <PaymentSegments></PaymentSegments>

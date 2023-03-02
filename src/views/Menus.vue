@@ -7,14 +7,14 @@
 <template>
   <ion-page>
     <ion-header>
-      <ion-toolbar>
+      <ion-toolbar color="toolbar">
         <ion-buttons slot="start">
           <ion-back-button default-href="/" />
         </ion-buttons>
         <ion-title>Menus (w/ Split Pane)</ion-title>
       </ion-toolbar>
     </ion-header>
-    <ion-content color="light">
+    <ion-content>
 
       <ion-list>
         <ion-item v-for="section in sections" :detail="true" :router-link="`/${ section.replaceAll(' ', '') }`" button>
