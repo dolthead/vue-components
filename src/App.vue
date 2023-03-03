@@ -13,7 +13,7 @@
     ion-content {
       --background: rgb(221 232 243);
     }
-    --ion-color-toolbar: #4a6087;
+    --ion-color-toolbar: hsl(218, 29%, 41%);
     --ion-color-toolbar-rgb: 74,96,135;
     --ion-color-toolbar-contrast: #ffffff;
     --ion-color-toolbar-contrast-rgb: 255,255,255;
@@ -29,4 +29,10 @@
     --ion-color-shade: var(--ion-color-toolbar-shade);
     --ion-color-tint: var(--ion-color-toolbar-tint);
   }
+
+@media (prefers-color-scheme: dark) {
+    :is(.ios, .md) body ion-content {
+      --background: hsl(218, 29%, 21%);
+    }
+}
 </style>
