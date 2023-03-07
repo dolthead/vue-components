@@ -245,21 +245,13 @@ ion-header {
 
     .swiper {
         width: 100vw !important;
-        margin: 0 !important;
+        margin: 0 8px !important;
         padding: 0 !important;
         background: #fff !important;
         --background: #fff !important;
 
-        .swiper-slide:first-of-type .card {
-            margin-left: 16px !important;
-        }
-
-        .swiper-slide:last-of-type .card {
-            margin-right: 16px !important;
-        }
-
         .swiper-slide .card {
-            margin: 0 8px !important;
+            margin: 0 8px 0 8px !important;
             width: 100%;
         }
 
@@ -273,6 +265,7 @@ ion-header {
             box-shadow: none !important;
             border-radius: 8px;
             background: transparent !important;
+            width: 250px;
 
             ion-img {
                 height: 300px;
