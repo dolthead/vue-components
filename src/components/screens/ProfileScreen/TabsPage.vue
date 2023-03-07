@@ -2,34 +2,33 @@
 import { IonRouterOutlet, IonPage, IonLabel, IonIcon, IonTabs, IonTabBar, IonTabButton } from '@ionic/vue';
 import { grid, gridOutline, earth, earthOutline, notifications, notificationsOutline, person, personOutline } from 'ionicons/icons';
 
-let current_tab = 'tab4';
-const setCurrentTab = (ev: any) => current_tab = ev.tab;
+let current_tab = 'tab1';
 </script>
 
 <template>
     <ion-page>
-        <ion-tabs @ionTabsDidChange="setCurrentTab($event)">
+        <ion-tabs @ionTabsDidChange="current_tab = $event.tab">
             <ion-router-outlet></ion-router-outlet>
             <ion-tab-bar slot="bottom">
-                <ion-tab-button tab="tab1" href="/ProfileScreen/tab1">
+                <ion-tab-button tab="tab1" href="/FeedsProfileScreens/tab1">
                     <ion-label>
                         <ion-icon :icon="current_tab == 'tab1' ? grid : gridOutline"></ion-icon>
                         <span>Feeds</span>
                     </ion-label>
                 </ion-tab-button>
-                <ion-tab-button tab="tab2" href="/ProfileScreen/tab2">
+                <ion-tab-button tab="tab2" href="/FeedsProfileScreens/tab2">
                     <ion-label>
                         <ion-icon :icon="current_tab == 'tab2' ? earth : earthOutline"></ion-icon>
                         <span>Explore</span>
                     </ion-label>
                 </ion-tab-button>
-                <ion-tab-button tab="tab3" href="/ProfileScreen/tab3">
+                <ion-tab-button tab="tab3" href="/FeedsProfileScreens/tab3">
                     <ion-label>
                         <ion-icon :icon="current_tab == 'tab3' ? notifications : notificationsOutline"></ion-icon>
                         <span>Notifications</span>
                     </ion-label>
                 </ion-tab-button>
-                <ion-tab-button tab="tab4" href="/ProfileScreen/tab4">
+                <ion-tab-button tab="tab4" href="/FeedsProfileScreens/tab4">
                     <ion-label>
                         <ion-icon :icon="current_tab == 'tab4' ? person : personOutline"></ion-icon>
                         <span>Profile</span>

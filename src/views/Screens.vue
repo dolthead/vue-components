@@ -1,7 +1,7 @@
 <script lang="ts" setup>
   import { IonContent, IonPage, IonHeader, IonToolbar, IonButtons, IonBackButton, IonTitle, IonList, IonItem, IonLabel } from '@ionic/vue';
 
-  const sections = [ 'FinTech Screen', 'Profile Screen'];//, 'Feeds Screen', 'Home Screen', 'Travel Screen' ];
+  const sections = [ 'FinTech Screen', 'Feeds & Profile Screens'];//, 'Home Screen', 'Travel Screen' ];
 </script>
 
 <template>
@@ -17,7 +17,7 @@
     <ion-content>
 
       <ion-list>
-        <ion-item v-for="section in sections" :detail="true" :router-link="`/${ section.replaceAll(' ', '') }`" button>
+        <ion-item v-for="section in sections" :detail="true" :router-link="`/${ section.replace(/[\s&]/g, '') }`" button>
           <ion-label>{{ section }}</ion-label>
         </ion-item>
       </ion-list>
