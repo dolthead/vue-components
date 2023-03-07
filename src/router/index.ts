@@ -116,6 +116,32 @@ const routes: Array<RouteRecordRaw> = [
       }
     ]
   },
+  {
+    path: '/HomeScreen',
+    component: () => import('@/components/screens/HomeScreen/TabsPage.vue'),
+    children: [
+      {
+        path: '',
+        redirect: '/HomeScreen/tab1'
+      },
+      {
+        path: 'tab1',
+        component: () => import('@/components/screens/HomeScreen/Tab1Page.vue')
+      },
+      {
+        path: 'tab2',
+        component: () => import('@/components/screens/HomeScreen/Tab1Page.vue')
+      },
+      {
+        path: 'tab3',
+        component: () => import('@/components/screens/HomeScreen/Tab1Page.vue')
+      },
+      {
+        path: 'tab4',
+        component: () => import('@/components/screens/HomeScreen/Tab1Page.vue')
+      }
+    ]
+  },
 ]
 
 const router = createRouter({
