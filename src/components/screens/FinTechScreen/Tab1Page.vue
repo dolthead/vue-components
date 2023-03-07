@@ -568,11 +568,9 @@ ion-content {
                     line-height: 17px;
                     text-align: center;
                 }
-
             }
         }
     }
-
 
     .transaction {
         padding: 0 0 24px 24px;

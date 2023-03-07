@@ -92,23 +92,29 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/ProfileScreen',
-    name: 'ProfileScreen',
-    component: () => import('@/components/screens/ProfileScreen.vue'),
-  },
-  {
-    path: '/FeedsScreen',
-    name: 'FeedScreen',
-    component: () => import('@/components/screens/FeedsScreen.vue'),
-  },
-  {
-    path: '/HomeScreen',
-    name: 'HomeScreen',
-    component: () => import('@/components/screens/HomeScreen.vue'),
-  },
-  {
-    path: '/TravelScreen',
-    name: 'TravelScreen',
-    component: () => import('@/components/screens/TravelScreen.vue'),
+    component: () => import('@/components/screens/ProfileScreen/TabsPage.vue'),
+    children: [
+      {
+        path: '',
+        redirect: '/ProfileScreen/tab4'
+      },
+      {
+        path: 'tab1',
+        component: () => import('@/components/screens/ProfileScreen/Tab4Page.vue')
+      },
+      {
+        path: 'tab2',
+        component: () => import('@/components/screens/ProfileScreen/Tab4Page.vue')
+      },
+      {
+        path: 'tab3',
+        component: () => import('@/components/screens/ProfileScreen/Tab4Page.vue')
+      },
+      {
+        path: 'tab4',
+        component: () => import('@/components/screens/ProfileScreen/Tab4Page.vue')
+      }
+    ]
   },
 ]
 
