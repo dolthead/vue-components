@@ -4,7 +4,7 @@
   import { logoIonic, logoVue, logoAngular, logoReact, logoGithub, chevronForward } from 'ionicons/icons';
 
   const sections = [
-    'Segments', 'Toolbars', 'Menus', 'Modals', 'Lists', 'Inputs', 'Tabs'
+    'Segments', 'Toolbars', 'Menus', 'Modals', 'Lists', 'Inputs', 'Tabs', 'Screens'
     // 'Segments', 'Toolbars', 'Widgets', 'Slides', 'Cards', 'Menus', 'Screens', 'Modals', 'Lists', 'Tabs', 'Inputs',
   ].sort();
 </script>

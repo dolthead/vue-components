@@ -24,6 +24,7 @@ specifiers:
   jsdom: ^20.0.3
   jshint: ^2.13.6
   sass: ^1.58.3
+  swiper: ^9.1.0
   typescript: ^4.9.4
   vite: ^4.0.3
   vite-plugin-pwa: ^0.14.0
@@ -42,6 +43,7 @@ dependencies:
   '@ionic/vue-router': 6.5.4
   core-js: 3.28.0
   ionicons: 6.1.3
+  swiper: 9.1.0
   vue: 3.2.47
   vue-router: 4.1.6_vue@3.2.47
 
@@ -5256,6 +5258,10 @@ packages:
       tweetnacl: 0.14.5
     dev: true
 
+  /ssr-window/4.0.2:
+    resolution: {integrity: sha512-ISv/Ch+ig7SOtw7G2+qkwfVASzazUnvlDTwypdLoPoySv+6MqlOV10VwPSE6EWkGjhW50lUmghPmpYZXMu/+AQ==}
+    dev: false
+
   /string-width/4.2.3:
     resolution: {integrity: sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==}
     engines: {node: '>=8'}
@@ -5372,6 +5378,13 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
     dev: true
+
+  /swiper/9.1.0:
+    resolution: {integrity: sha512-Ck8CywwfUghkbUAHbxTAWyeUAcNrIDNJ6EnKFBGGcHDjeqbh0Jq08RbmD5fMu1a0oOv1eIkUGVkqNJy/asm+yA==}
+    engines: {node: '>= 4.7.0'}
+    dependencies:
+      ssr-window: 4.0.2
+    dev: false
 
   /symbol-tree/3.2.4:
     resolution: {integrity: sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==}

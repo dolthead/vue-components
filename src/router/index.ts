@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
 import { RouteRecordRaw } from 'vue-router';
 import HomePage from '@/views/HomePage.vue'
+// import TabsPageVue from '@/components/screens/FinTechScreen/TabsPage.vue';
 
 // 'Segments', 'Toolbars', 'Widgets', 'Slides', 'Cards', 'Menus', 'Screens', 'Modals', 'Lists', 'Tabs', 'Inputs',
 const routes: Array<RouteRecordRaw> = [
@@ -57,6 +58,57 @@ const routes: Array<RouteRecordRaw> = [
     path: '/Tabs',
     name: 'Tabs',
     component: () => import('@/views/Tabs.vue'),
+  },
+  {
+    path: '/Screens',
+    name: 'Screens',
+    component: () => import('@/views/Screens.vue'),
+  },
+  {
+    path: '/FinTechScreen',
+    component: () => import('@/components/screens/FinTechScreen/TabsPage.vue'),
+    children: [
+      {
+        path: '',
+        redirect: '/FinTechScreen/tab1'
+      },
+      {
+        path: 'tab1',
+        component: () => import('@/components/screens/FinTechScreen/Tab1Page.vue')
+      },
+      {
+        path: 'tab2',
+        component: () => import('@/components/screens/FinTechScreen/Tab1Page.vue')
+      },
+      {
+        path: 'tab3',
+        component: () => import('@/components/screens/FinTechScreen/Tab1Page.vue')
+      },
+      {
+        path: 'tab4',
+        component: () => import('@/components/screens/FinTechScreen/Tab1Page.vue')
+      }
+    ]
+  },
+  {
+    path: '/ProfileScreen',
+    name: 'ProfileScreen',
+    component: () => import('@/components/screens/ProfileScreen.vue'),
+  },
+  {
+    path: '/FeedsScreen',
+    name: 'FeedScreen',
+    component: () => import('@/components/screens/FeedsScreen.vue'),
+  },
+  {
+    path: '/HomeScreen',
+    name: 'HomeScreen',
+    component: () => import('@/components/screens/HomeScreen.vue'),
+  },
+  {
+    path: '/TravelScreen',
+    name: 'TravelScreen',
+    component: () => import('@/components/screens/TravelScreen.vue'),
   },
 ]
 
