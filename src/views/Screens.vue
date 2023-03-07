@@ -1,7 +1,7 @@
 <script lang="ts" setup>
   import { IonContent, IonPage, IonHeader, IonToolbar, IonButtons, IonBackButton, IonTitle, IonList, IonItem, IonLabel } from '@ionic/vue';
 
-  const sections = [ 'FinTech Screen', 'Feeds & Profile Screens', 'Home Screen'];//, 'Travel Screen' ];
+  const sections = [ 'FinTech Screen', 'Feeds & Profile Screens', 'Home Screen', 'Travel Screen' ];
 </script>
 
 <template>

@@ -142,6 +142,11 @@ const routes: Array<RouteRecordRaw> = [
       }
     ]
   },
+  {
+    path: '/TravelScreen',
+    name: 'TravelScreen',
+    component: () => import('@/components/screens/TravelScreen.vue'),
+  },
 ]
 
 const router = createRouter({
