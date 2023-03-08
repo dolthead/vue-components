@@ -32,22 +32,24 @@
                                         <ion-label>Cards</ion-label>
                                     </ion-list-header>
                                     <ion-item lines="none" class="ion-no-padding">
-                                        <div class="accounts">
-                                            <img src="https://iecommerce.sconn.co.in/assets/icon/visa-boxed.svg">
-                                            <ion-text class="">Visa
-                                                <span class="d-block fs-xxs fw-bold">Debit <i>****</i> 1795</span>
-                                            </ion-text>
-                                        </div>
-                                        <ion-radio slot="end" value="visa" mode="md"></ion-radio>
+                                        <ion-radio value="visa" mode="md" aria-label="Visa Card">
+                                            <div class="accounts">
+                                                <img src="https://iecommerce.sconn.co.in/assets/icon/visa-boxed.svg">
+                                                <ion-text class="">Visa
+                                                    <span class="d-block fs-xxs fw-bold">Debit <i>****</i> 1795</span>
+                                                </ion-text>
+                                            </div>
+                                        </ion-radio>
                                     </ion-item>
                                     <ion-item lines="none" class="ion-no-padding">
-                                        <div class="accounts">
-                                            <img src="https://iecommerce.sconn.co.in/assets/icon/mastercard-boxed.svg">
-                                            <ion-text class="">Mastercard
-                                                <span class="d-block fs-xxs fw-bold">Credit <i>****</i> 1985</span>
-                                            </ion-text>
-                                        </div>
-                                        <ion-radio slot="end" value="master" mode="md"></ion-radio>
+                                        <ion-radio value="master" mode="md" aria-label="Mastercard">
+                                            <div class="accounts">
+                                                <img src="https://iecommerce.sconn.co.in/assets/icon/mastercard-boxed.svg">
+                                                <ion-text class="">Mastercard
+                                                    <span class="d-block fs-xxs fw-bold">Credit <i>****</i> 1985</span>
+                                                </ion-text>
+                                            </div>
+                                        </ion-radio>
                                     </ion-item>
                                 </ion-radio-group>
                             </ion-list>
@@ -67,12 +69,13 @@
                                         <ion-label>Amazon Pay UPI ID</ion-label>
                                     </ion-list-header>
                                     <ion-item lines="none" class="ion-no-padding">
-                                        <div class="accounts">
-                                            <ion-text class="">amazonpay@apl
-                                                <span class="d-block fs-xxs fw-bold">98 <i>****</i> 7821</span>
-                                            </ion-text>
-                                        </div>
-                                        <ion-radio slot="end" value="1" mode="md"></ion-radio>
+                                        <ion-radio value="1" mode="md" aria-label="Amazon Pay">
+                                            <div class="accounts">
+                                                <ion-text class="">amazonpay@apl
+                                                    <span class="d-block fs-xxs fw-bold">98 <i>****</i> 7821</span>
+                                                </ion-text>
+                                            </div>
+                                        </ion-radio>
                                     </ion-item>
                                 </ion-radio-group>
                             </ion-list>
@@ -92,12 +95,13 @@
                                         <ion-label>Google Pay UPI ID</ion-label>
                                     </ion-list-header>
                                     <ion-item lines="none" class="ion-no-padding">
-                                        <div class="accounts">
-                                            <ion-text class="">googlepay@okicici
-                                                <span class="d-block fs-xxs fw-bold">88 <i>****</i> 4107</span>
-                                            </ion-text>
-                                        </div>
-                                        <ion-radio slot="end" value="1" mode="md"></ion-radio>
+                                        <ion-radio value="1" mode="md" aria-label="Google Pay">
+                                            <div class="accounts">
+                                                <ion-text class="">googlepay@okicici
+                                                    <span class="d-block fs-xxs fw-bold">88 <i>****</i> 4107</span>
+                                                </ion-text>
+                                            </div>
+                                        </ion-radio>
                                     </ion-item>
                                 </ion-radio-group>
                             </ion-list>
@@ -117,22 +121,24 @@
                                         <ion-label>Bank Accounts and Cards</ion-label>
                                     </ion-list-header>
                                     <ion-item lines="none" class="ion-no-padding">
-                                        <div class="accounts">
-                                            <img src="https://iecommerce.sconn.co.in/assets/icon/visa-boxed.svg">
-                                            <ion-text class="">Visa
-                                                <span class="d-block fs-xxs fw-bold">Debit <i>****</i> 1795</span>
-                                            </ion-text>
-                                        </div>
-                                        <ion-radio slot="end" value="visa" mode="md"></ion-radio>
+                                        <ion-radio value="visa" mode="md" aria-label="Visa Card">
+                                            <div class="accounts">
+                                                <img src="https://iecommerce.sconn.co.in/assets/icon/visa-boxed.svg">
+                                                <ion-text class="">Visa
+                                                    <span class="d-block fs-xxs fw-bold">Debit <i>****</i> 1795</span>
+                                                </ion-text>
+                                            </div>
+                                        </ion-radio>
                                     </ion-item>
                                     <ion-item lines="none" class="ion-no-padding">
-                                        <div class="accounts">
-                                            <img src="https://iecommerce.sconn.co.in/assets/icon/mastercard-boxed.svg">
-                                            <ion-text class="">Mastercard
-                                                <span class="d-block fs-xxs fw-bold">Credit <i>****</i> 1985</span>
-                                            </ion-text>
-                                        </div>
-                                        <ion-radio slot="end" value="master" mode="md"></ion-radio>
+                                        <ion-radio value="master" mode="md" aria-label="Mastercard">
+                                            <div class="accounts">
+                                                <img src="https://iecommerce.sconn.co.in/assets/icon/mastercard-boxed.svg">
+                                                <ion-text class="">Mastercard
+                                                    <span class="d-block fs-xxs fw-bold">Credit <i>****</i> 1985</span>
+                                                </ion-text>
+                                            </div>
+                                        </ion-radio>
                                     </ion-item>
                                 </ion-radio-group>
                             </ion-list>
@@ -199,6 +205,10 @@
                 --background: #fff !important;
                 background: #fff !important;
                 --color: #222428;
+
+                ion-radio {
+                    width: 100%;
+                }
 
                 .accounts {
                     display: flex;

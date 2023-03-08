@@ -18,17 +18,15 @@ import { IonContent, IonPage, IonItem, IonLabel, IonGrid, IonRow, IonCol, IonInp
                                 <ion-row class="ion-margin-bottom">
                                     <ion-col size="12">
                                         <ion-item class="ion-margin-bottom ion-align-self-center">
-                                            <ion-label mode="md" position="floating">User Name or E-mail</ion-label>
-                                            <ion-input class="" placeholder="Enter User Name or E-mail"></ion-input>
+                                            <ion-input class="" label="Enter User Name or E-mail" label-placement="floating"></ion-input>
                                         </ion-item>
                                     </ion-col>
                                 </ion-row>
                                 <ion-row class="ion-margin-top">
                                     <ion-col size="12" class="ion-margin-bottom">
                                         <ion-item class="">
-                                            <ion-label mode="md" position="floating">Password</ion-label>
-                                            <ion-input class="ion-padding-start" type="password"
-                                                placeholder="Enter Password"></ion-input>
+                                            <ion-input class="ion-padding-start" type="password" label-placement="floating"
+                                                label="Password"></ion-input>
                                         </ion-item>
                                         <a routerLink="/Forget-password" class="fp" color="medium">Forgot Password?</a>
                                     </ion-col>

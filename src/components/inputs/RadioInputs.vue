@@ -16,28 +16,25 @@ import { IonContent, IonPage, IonList, IonItem, IonLabel, IonRadioGroup, IonRadi
                         <ion-list class="">
                             <ion-radio-group name="userList" value="userList1">
                                 <ion-item lines="none" color="none" class="ion-no-padding">
-                                    <ion-avatar>
+                                    <ion-avatar slot="start">
                                         <img alt="userList Profile"
                                             src="https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjE4fHxmYWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
                                     </ion-avatar>
-                                    <ion-label class="ion-padding-start name">Bartosz Chorąży</ion-label>
-                                    <ion-radio value="userList1" class="ion-no-margin" color="primary"></ion-radio>
+                                    <ion-radio value="userList1" class="name" color="primary">Bartosz Chorąży</ion-radio>
                                 </ion-item>
                                 <ion-item lines="none" color="none" class="ion-no-padding">
-                                    <ion-avatar>
+                                    <ion-avatar slot="start">
                                         <img alt="userList Profile"
                                             src="https://images.unsplash.com/photo-1549237511-6b64e006ce65?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTI2fHxmYWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
                                     </ion-avatar>
-                                    <ion-label class="ion-padding-start name">Vasileios Soutis</ion-label>
-                                    <ion-radio value="userList2" class="ion-no-margin" color="primary"></ion-radio>
+                                    <ion-radio value="userList2" class="name" color="primary">Vasileios Soutis</ion-radio>
                                 </ion-item>
                                 <ion-item lines="none" color="none" class="ion-no-padding">
-                                    <ion-avatar>
+                                    <ion-avatar slot="start">
                                         <img alt="userList Profile"
                                             src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" />
                                     </ion-avatar>
-                                    <ion-label class="ion-padding-start name">Loana Albisser</ion-label>
-                                    <ion-radio value="userList3" class="ion-no-margin" color="primary"></ion-radio>
+                                    <ion-radio value="userList3" class="name" color="primary">Loana Albisser</ion-radio>
                                 </ion-item>
                             </ion-radio-group>
                         </ion-list>
@@ -81,21 +78,15 @@ import { IonContent, IonPage, IonList, IonItem, IonLabel, IonRadioGroup, IonRadi
                 padding: 0px !important;
             }
 
-            ion-label {
+            ion-radio {
                 font-size: 1rem;
                 font-weight: 500;
                 letter-spacing: 1px;
                 color: #3e3e3e;
-            }
-
-            ion-label.name {
                 font-weight: 500;
                 letter-spacing: 0.8px;
-            }
-
-            ion-radio {
-                width: 25px;
-                height: 25px;
+                margin-left: 16px;
+                height: 100%;
             }
 
             ion-radio::part(container) {

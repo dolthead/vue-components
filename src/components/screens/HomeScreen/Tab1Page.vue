@@ -196,7 +196,7 @@ ion-header ion-toolbar:nth-child(2) {
 }
 
 ion-header {
-    ion-toolbar {
+    ion-toolbar:nth-child(2) {
         --background: #fff;
         --min-height: 55px;
         --border-color: transparent !important;
@@ -265,7 +265,7 @@ ion-header {
             box-shadow: none !important;
             border-radius: 8px;
             background: transparent !important;
-            width: 250px;
+            width: 260px;
 
             ion-img {
                 height: 300px;

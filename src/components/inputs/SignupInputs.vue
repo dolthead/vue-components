@@ -40,7 +40,7 @@ import { chevronBackOutline } from 'ionicons/icons';
                                 <ion-row>
                                     <ion-col size="12">
                                         <ion-item>
-                                            <ion-input class="" placeholder="User Name or E-mail"></ion-input>
+                                            <ion-input placeholder="User Name or E-mail" aria-label="User Name or E-mail"></ion-input>
                                         </ion-item>
                                     </ion-col>
                                 </ion-row>
@@ -48,7 +48,7 @@ import { chevronBackOutline } from 'ionicons/icons';
                                     <ion-col size="12">
                                         <ion-item>
                                             <ion-input class="ion-padding-start" type="password"
-                                                placeholder="Password"></ion-input>
+                                                placeholder="Password" aria-label="Password"></ion-input>
                                         </ion-item>
                                     </ion-col>
                                 </ion-row>
@@ -56,7 +56,7 @@ import { chevronBackOutline } from 'ionicons/icons';
                                     <ion-col size="12">
                                         <ion-item class="">
                                             <ion-input class="ion-padding-start" type="password"
-                                                placeholder="Confirm Password"></ion-input>
+                                                placeholder="Confirm Password" aria-label="Confirm Password"></ion-input>
                                         </ion-item>
                                     </ion-col>
                                 </ion-row>

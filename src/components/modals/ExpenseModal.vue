@@ -30,28 +30,25 @@ import { closeOutline } from 'ionicons/icons';
             <ion-list>
                 <ion-radio-group name="member" value="member1">
                     <ion-item lines="none" color="none" class="ion-no-padding">
-                        <ion-avatar>
+                        <ion-avatar slot="start">
                             <img alt="Member Profile"
                                 src="https://images.unsplash.com/photo-1639149888905-fb39731f2e6c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDl8fHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
                         </ion-avatar>
-                        <ion-label class="ion-padding-start name">Matheus Souto</ion-label>
-                        <ion-radio value="member1" class="ion-no-margin" color="success"></ion-radio>
+                        <ion-radio value="member1" class="ion-no-margin name" color="success">Matheus Souto</ion-radio>
                     </ion-item>
                     <ion-item lines="none" color="none" class="ion-no-padding">
-                        <ion-avatar>
+                        <ion-avatar slot="start">
                             <img alt="Member Profile"
                                 src="https://images.unsplash.com/photo-1624561172888-ac93c696e10c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzJ8fHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
                         </ion-avatar>
-                        <ion-label class="ion-padding-start name">Eduardo Souto</ion-label>
-                        <ion-radio value="member2" class="ion-no-margin" color="success"></ion-radio>
+                        <ion-radio value="member2" class="ion-no-margin name" color="success">Eduardo Souto</ion-radio>
                     </ion-item>
                     <ion-item lines="none" color="none" class="ion-no-padding">
-                        <ion-avatar>
+                        <ion-avatar slot="start">
                             <img alt="Member Profile"
                                 src="https://images.unsplash.com/photo-1521856729154-7118f7181af9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fHByb2ZpbGUlMjBwaWN0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
                         </ion-avatar>
-                        <ion-label class="ion-padding-start name">Ana Souto</ion-label>
-                        <ion-radio value="member3" class="ion-no-margin" color="success"></ion-radio>
+                        <ion-radio value="member3" class="ion-no-margin name" color="success">Ana Souto</ion-radio>
                     </ion-item>
                 </ion-radio-group>
             </ion-list>
@@ -82,19 +79,17 @@ ion-list {
     --ion-item-background: transparent;
 }
 
-ion-label.name {
+ion-radio {
     font-weight: 500;
     letter-spacing: 0.8px;
-}
-
-ion-radio {
-    width: 30px;
-    height: 30px;
+    height: 100%;
 }
 
 ion-radio::part(container) {
     border-radius: 50px;
     border: 2px solid #ddd;
+    width: 30px;
+    height: 30px;
 }
 
 ion-radio::part(mark) {

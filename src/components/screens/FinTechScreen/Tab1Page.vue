@@ -130,7 +130,7 @@ import 'swiper/css';
                                     <ion-avatar>
                                         <img src="https://cdn-icons-png.flaticon.com/512/323/323310.png" />
                                     </ion-avatar>
-                                    <ion-select interface="action-sheet" placeholder="Currency" value="USD">
+                                    <ion-select interface="action-sheet" aria-label="Currency" value="USD">
                                         <ion-select-option value="USD">USD</ion-select-option>
                                         <ion-select-option value="INR">INR</ion-select-option>
                                     </ion-select>
