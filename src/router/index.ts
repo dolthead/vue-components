@@ -147,6 +147,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'TravelScreen',
     component: () => import('@/components/screens/TravelScreen.vue'),
   },
+  {
+    path: '/Slides',
+    name: 'Slides',
+    component: () => import('@/views/Slides.vue'),
+  },
 ]
 
 const router = createRouter({
