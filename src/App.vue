@@ -35,4 +35,44 @@
       --background: hsl(218, 29%, 21%);
     }
 }
+@font-face {
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 600;
+    src: url(../assets/font/Urbanist-VariableFont_wght.ttf) format('woff2');
+}
+@font-face {
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 500;
+    src: url(../assets/font/Urbanist-VariableFont_wght.ttf) format('woff2');
+}
+@font-face {
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url(../assets/font/Urbanist-VariableFont_wght.ttf) format('woff2');
+}
+@font-face {
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 300;
+    src: url(../assets/font/Urbanist-VariableFont_wght.ttf) format('woff2');
+}
+@font-face {
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 200;
+    src: url(../assets/font/Urbanist-Light.ttf) format('woff2');
+}
+:root[mode=ios],
+:root[mode=md]{
+  --ion-font-family: 'Urbanist', sans-serif;
+  font-family:  'Urbanist', sans-serif !important;
+}
 </style>
