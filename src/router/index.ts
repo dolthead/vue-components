@@ -152,6 +152,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Slides',
     component: () => import('@/views/Slides.vue'),
   },
+  {
+    path: '/Cards',
+    name: 'Cards',
+    component: () => import('@/views/Cards.vue'),
+  },
 ]
 
 const router = createRouter({
