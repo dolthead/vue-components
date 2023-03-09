@@ -1,6 +1,6 @@
 {
-	"appId": "io.ionic.starter",
-	"appName": "ionic-blank-vite",
+	"appId": "com.simplybest.ionicvue",
+	"appName": "Ionic Vue",
 	"webDir": "dist",
 	"bundledWebRuntime": false
 }
