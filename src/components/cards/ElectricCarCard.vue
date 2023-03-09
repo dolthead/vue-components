@@ -4,7 +4,7 @@ import { arrowForwardOutline, flashSharp } from 'ionicons/icons';
 </script>
 
 <template>
-  <ion-grid class="ion-padding">
+  <ion-grid class="ion-no-padding">
     <ion-row>
       <ion-col size="12">
         <ion-card mode="ios">

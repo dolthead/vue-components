@@ -1,10 +1,44 @@
 <script lang="ts" setup>
 import { IonContent, IonPage, IonHeader, IonToolbar, IonButtons, IonBackButton, IonTitle, IonAccordion, IonAccordionGroup, IonItem, IonLabel } from '@ionic/vue';
 import ElectricCarCard from '@/components/cards/ElectricCarCard.vue';
+import RecentActivityCard from '@/components/cards/RecentActivityCard.vue';
+import AppointmentRequestCard from '@/components/cards/AppointmentRequestCard.vue';
+import WannaJoinCard from '@/components/cards/WannaJoinCard.vue';
+import AccentChairCard from '@/components/cards/AccentChairCard.vue';
+import CappuccinoCard from '@/components/cards/CappuccinoCard.vue';
+import DesignArchitectCard from '@/components/cards/DesignArchitectCard.vue';
+import MoisturiserCard from '@/components/cards/MoisturiserCard.vue';
+import PastelReportCard from '@/components/cards/PastelReportCard.vue';
+import MedReminderCard from '@/components/cards/MedReminderCard.vue';
+import SharedEventCard from '@/components/cards/SharedEventCard.vue';
+import MarsCard from '@/components/cards/MarsCard.vue';
+import CreditCardCard from '@/components/cards/CreditCardCard.vue';
+import OrderSummaryCard from '@/components/cards/OrderSummaryCard.vue';
+import IoniconfCard from '@/components/cards/IoniconfCard.vue';
+import TravelResortCard from '@/components/cards/TravelResortCard.vue';
+import UxDesignersCard from '@/components/cards/UxDesignersCard.vue';
+import AppDevelopmentCard from '@/components/cards/AppDevelopmentCard.vue';
 
 const cardList = [
   { title: 'Electric Car', widget: ElectricCarCard },
-];
+  { title: 'Recent Activity', widget: RecentActivityCard },
+  { title: 'Appointment Request', widget: AppointmentRequestCard },
+  { title: 'Wanna Join', widget: WannaJoinCard },
+  { title: 'Accent Chair', widget: AccentChairCard },
+  { title: 'Cappuccino', widget: CappuccinoCard },
+  { title: 'Design Architect', widget: DesignArchitectCard },
+  { title: 'Moisturiser', widget: MoisturiserCard },
+  { title: 'Pastel Report', widget: PastelReportCard },
+  { title: 'Med Reminder', widget: MedReminderCard },
+  { title: 'Shared Event', widget: SharedEventCard },
+  { title: 'Mars', widget: MarsCard },
+  { title: 'Credit Card', widget: CreditCardCard },
+  { title: 'Order Summary', widget: OrderSummaryCard },
+  { title: 'Ioniconf', widget: IoniconfCard },
+  { title: 'Travel Resort', widget: TravelResortCard },
+  { title: 'UX Designers', widget: UxDesignersCard },
+  { title: 'App Development', widget: AppDevelopmentCard },
+].sort((a, b) => a.title.localeCompare(b.title));
 </script>
 
 <template>
@@ -17,14 +51,16 @@ const cardList = [
         <ion-title>Cards</ion-title>
       </ion-toolbar>
     </ion-header>
-    <ion-content class="ion-padding">
+    <ion-content class="ion-no-padding">
 
       <ion-accordion-group>
         <ion-accordion v-for="card of cardList" :key="card.title">
           <ion-item slot="header" color="light">
             <ion-label>{{ card.title }}</ion-label>
           </ion-item>
-          <component :is="card.widget" slot="content"></component>
+          <div class="minimal-padding" slot="content">
+            <component :is="card.widget"></component>
+          </div>
         </ion-accordion>
       </ion-accordion-group>
 
@@ -33,6 +69,9 @@ const cardList = [
 </template>
 
 <style lang="scss" scoped>
+.minimal-padding {
+  padding: 6px;
+}
 ion-accordion {
   background-color: transparent;
 }
