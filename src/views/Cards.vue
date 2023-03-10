@@ -18,6 +18,19 @@ import IoniconfCard from '@/components/cards/IoniconfCard.vue';
 import TravelResortCard from '@/components/cards/TravelResortCard.vue';
 import UxDesignersCard from '@/components/cards/UxDesignersCard.vue';
 import AppDevelopmentCard from '@/components/cards/AppDevelopmentCard.vue';
+import KeyDesignCard from '@/components/cards/KeyDesignCard.vue';
+import MasterClassCard from '@/components/cards/MasterClassCard.vue';
+import PlankExerciseCard from '@/components/cards/PlankExerciseCard.vue';
+import ReviewMeetingCard from '@/components/cards/ReviewMeetingCard.vue';
+import VirtualRealityCard from '@/components/cards/VirtualRealityCard.vue';
+import BlueMondayCard from '@/components/cards/BlueMondayCard.vue';
+import DarkProfileCard from '@/components/cards/DarkProfileCard.vue';
+import TwoColorProfileCard from '@/components/cards/TwoColorProfileCard.vue';
+import UpgradeCard from '@/components/cards/UpgradeCard.vue';
+import SimplicityAndFocusCard from '@/components/cards/SimplicityAndFocusCard.vue';
+import ProductiveMorningCard from '@/components/cards/ProductiveMorningCard.vue';
+import MorningPlaylistCard from '@/components/cards/MorningPlaylistCard.vue';
+import CabbageCard from '@/components/cards/CabbageCard.vue';
 
 const cardList = [
   { title: 'Electric Car', widget: ElectricCarCard },
@@ -38,6 +51,19 @@ const cardList = [
   { title: 'Travel Resort', widget: TravelResortCard },
   { title: 'UX Designers', widget: UxDesignersCard },
   { title: 'App Development', widget: AppDevelopmentCard },
+  { title: 'Key Design Principles', widget: KeyDesignCard },
+  { title: 'Master Class', widget: MasterClassCard },
+  { title: 'Plank Exercise', widget: PlankExerciseCard },
+  { title: 'Review Meeting', widget: ReviewMeetingCard },
+  { title: 'Virtual Reality', widget: VirtualRealityCard },
+  { title: 'Blue Monday', widget: BlueMondayCard },
+  { title: 'Dark Profile', widget: DarkProfileCard },
+  { title: 'Two Color Profile', widget: TwoColorProfileCard },
+  { title: 'Upgrade Your Plan', widget: UpgradeCard },
+  { title: 'Simplicity And Focus', widget: SimplicityAndFocusCard },
+  { title: 'Productive Morning', widget: ProductiveMorningCard },
+  { title: 'Morning Playlist', widget: MorningPlaylistCard },
+  { title: 'Cabbage', widget: CabbageCard },
 ].sort((a, b) => a.title.localeCompare(b.title));
 </script>
 

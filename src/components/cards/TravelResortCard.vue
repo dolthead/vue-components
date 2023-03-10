@@ -31,7 +31,7 @@ import { star } from 'ionicons/icons';
                     <h1 class="location">Marina Bay Sands, <br/> Singapore</h1>
                  </ion-text>
                  <ion-item lines="none" class="ion-no-margin ion-no-padding">
-                    <ion-label class="price">$2300</ion-label>
+                    <ion-label class="price">${{ new Intl.NumberFormat().format(2300) }}</ion-label>
                     <a class="custom-btn">
                        <ion-icon slot="start" :icon="star"></ion-icon>
                        4.9
