@@ -31,6 +31,14 @@ import SimplicityAndFocusCard from '@/components/cards/SimplicityAndFocusCard.vu
 import ProductiveMorningCard from '@/components/cards/ProductiveMorningCard.vue';
 import MorningPlaylistCard from '@/components/cards/MorningPlaylistCard.vue';
 import CabbageCard from '@/components/cards/CabbageCard.vue';
+import CaseStudyCard from '@/components/cards/CaseStudyCard.vue';
+import TilesCard from '@/components/cards/TilesCard.vue';
+import PodcastCard from '@/components/cards/PodcastCard.vue';
+import CodingLessonsCard from '@/components/cards/CodingLessonsCard.vue';
+import EatHappyCard from '@/components/cards/EatHappyCard.vue';
+import DeveloperWeekendsCard from '@/components/cards/DeveloperWeekendsCard.vue';
+import PhotoOfTheDayCard from '@/components/cards/PhotoOfTheDayCard.vue';
+import SweetestTunesCard from '@/components/cards/SweetestTunesCard.vue';
 
 const cardList = [
   { title: 'Electric Car', widget: ElectricCarCard },
@@ -64,6 +72,14 @@ const cardList = [
   { title: 'Productive Morning', widget: ProductiveMorningCard },
   { title: 'Morning Playlist', widget: MorningPlaylistCard },
   { title: 'Cabbage', widget: CabbageCard },
+  { title: 'Case Study', widget: CaseStudyCard },
+  { title: 'Tiles', widget: TilesCard },
+  { title: 'Podcast', widget: PodcastCard },
+  { title: 'Coding Lessons', widget: CodingLessonsCard },
+  { title: 'Eat Happy', widget: EatHappyCard },
+  { title: 'Developer Weekends', widget: DeveloperWeekendsCard },
+  { title: 'Photo Of The Day', widget: PhotoOfTheDayCard },
+  { title: 'Sweetest Tunes', widget: SweetestTunesCard },
 ].sort((a, b) => a.title.localeCompare(b.title));
 </script>
 

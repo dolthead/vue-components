@@ -19,13 +19,13 @@ import { eyeOutline, chatbubbleOutline } from 'ionicons/icons';
                       Certification Course</span></ion-label>
                 </ion-col>
                 <ion-col size="4" class="ion-align-self-center">
-                  <ion-button class="ion-no-margin" fill="clear" shape="circle" size="small" mode="ios">
+                  <ion-button class="ion-no-margin circle-button" fill="clear" size="small" mode="ios">
                     <ion-icon :icon="eyeOutline" size="small"></ion-icon>
                   </ion-button>
                   <span class="ion-text-start count">{{ new Intl.NumberFormat().format(1757) }}</span>
                 </ion-col>
                 <ion-col size="4" class="ion-align-self-center">
-                  <ion-button class="ion-no-margin" fill="clear" shape="circle" size="small" mode="ios">
+                  <ion-button class="ion-no-margin circle-button" fill="clear" size="small" mode="ios">
                     <ion-icon :icon="chatbubbleOutline" size="small"></ion-icon>
                   </ion-button>
                   <span class="ion-text-start count">{{ new Intl.NumberFormat().format(42) }}</span>
@@ -97,7 +97,7 @@ import { eyeOutline, chatbubbleOutline } from 'ionicons/icons';
         padding-bottom: 5px;
       }
 
-      ion-button[shape="circle"] {
+      ion-button.circle-button {
         --border-radius: 50%;
         width: 35px;
         height: 35px;
