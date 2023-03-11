@@ -157,6 +157,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Cards',
     component: () => import('@/views/Cards.vue'),
   },
+  {
+    path: '/Widgets',
+    name: 'Widgets',
+    component: () => import('@/views/Widgets.vue'),
+  },
 ]
 
 const router = createRouter({
