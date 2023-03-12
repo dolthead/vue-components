@@ -1,12 +1,34 @@
 <script lang="ts" setup>
-  import { IonContent, IonPage, IonHeader, IonToolbar, IonButtons, IonBackButton, IonTitle, IonText, IonIcon } from '@ionic/vue';
-  import BackgroundTabs from '@/components/tabs/BackgroundTabs.vue';
-  import IconTabs from '@/components/tabs/IconTabs.vue';
-  import DefaultTabs from '@/components/tabs/DefaultTabs.vue';
-  import FilledIconTabs from '@/components/tabs/FilledIconTabs.vue';
-  import TopLineTabs from '@/components/tabs/TopLineTabs.vue';
-  import ChipTabs from '@/components/tabs/ChipTabs.vue';
-  import { star } from 'ionicons/icons';
+import { IonContent, IonPage, IonHeader, IonToolbar, IonButtons, IonBackButton, IonTitle, IonButton, IonIcon, IonAccordion, IonAccordionGroup, IonItem, IonLabel } from '@ionic/vue';
+import { eye } from 'ionicons/icons';
+import { ref } from 'vue';
+import BackgroundTabs from '@/components/tabs/BackgroundTabs.vue';
+import IconTabs from '@/components/tabs/IconTabs.vue';
+import DefaultTabs from '@/components/tabs/DefaultTabs.vue';
+import FilledIconTabs from '@/components/tabs/FilledIconTabs.vue';
+import TopLineTabs from '@/components/tabs/TopLineTabs.vue';
+import ChipTabs from '@/components/tabs/ChipTabs.vue';
+
+const tabsList = [
+  { title: 'Background', widget: BackgroundTabs },
+  { title: 'Icon', widget: IconTabs },
+  { title: 'Default', widget: DefaultTabs },
+  { title: 'Filled Icon', widget: FilledIconTabs },
+  { title: 'Top Line', widget: TopLineTabs },
+  { title: 'Chip', widget: ChipTabs },
+].sort((a, b) => a.title.localeCompare(b.title));
+
+const group = ref<any | null>(null);
+
+const multiple = ref(false);
+
+const toggleViewAll = () => {
+  multiple.value = !multiple.value;
+  group.value?.$el.querySelectorAll('ion-accordion').forEach((accordion: any) => {
+    if (multiple.value) accordion.expandAccordion();
+    else accordion.collapseAccordion();
+  });
+}
 </script>
 
 <template>
@@ -17,39 +39,35 @@
           <ion-back-button default-href="/" />
         </ion-buttons>
         <ion-title>Tabs</ion-title>
+        <ion-buttons slot="end">
+          <ion-button @click="toggleViewAll">
+            <ion-icon slot="icon-only" :icon="eye"></ion-icon>
+          </ion-button>
+        </ion-buttons>
       </ion-toolbar>
     </ion-header>
     <ion-content>
 
-      <ion-text class="text-padding">Background Tabs</ion-text>
-      <BackgroundTabs></BackgroundTabs>
-      <br>
-      <ion-text class="text-padding">Icon Tabs</ion-text>
-      <IconTabs></IconTabs>
-      <br>
-      <ion-text class="text-padding">Default Tabs</ion-text>
-      <DefaultTabs></DefaultTabs>
-      <br>
-      <ion-text class="text-padding ion-justify-content-center">
-        Filled Icon Tabs
-        <span class="new-feature ion-justify-content-center">
-          <ion-icon :icon="star" color="light"></ion-icon>
-          new!
-        </span>
-      </ion-text>
-      <FilledIconTabs></FilledIconTabs>
-      <br>
-      <ion-text class="text-padding">Top Line Tabs</ion-text>
-      <TopLineTabs></TopLineTabs>
-      <br>
-      <ion-text class="text-padding">Chip Tabs</ion-text>
-      <ChipTabs></ChipTabs>
+      <ion-accordion-group :multiple="multiple" ref="group">
+        <ion-accordion v-for="widget of tabsList" :key="widget.title">
+          <ion-item slot="header" color="light">
+            <ion-label>{{ widget.title }}</ion-label>
+          </ion-item>
+          <div class="minimal-padding" slot="content">
+            <component :is="widget.widget"></component>
+          </div>
+        </ion-accordion>
+      </ion-accordion-group>
 
     </ion-content>
   </ion-page>
 </template>
 
 <style lang="scss" scoped>
+.minimal-padding {
+  padding: 1px;
+  background-color: var(--ion-color-light-shade);
+}
   .text-padding {
     display: block;
     margin: 0 16px 8px 16px;

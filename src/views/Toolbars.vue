@@ -1,5 +1,7 @@
 <script lang="ts" setup>
-  import { IonContent, IonPage, IonHeader, IonToolbar, IonButtons, IonBackButton, IonTitle, IonText } from '@ionic/vue';
+  import { IonContent, IonPage, IonHeader, IonToolbar, IonButtons, IonButton, IonIcon, IonBackButton, IonTitle, IonAccordion, IonAccordionGroup, IonItem, IonLabel } from '@ionic/vue';
+  import { eye } from 'ionicons/icons';
+  import { ref } from 'vue';
   import CalendarToolbar from '@/components/toolbars/CalendarToolbar.vue';
   import NotesToolbar from '@/components/toolbars/NotesToolbar.vue';
   import CMIToolbar from '@/components/toolbars/CMIToolbar.vue';
@@ -8,6 +10,29 @@
   import StackedToolbar from '@/components/toolbars/StackedToolbar.vue';
   import ProfileToolbar from '@/components/toolbars/ProfileToolbar.vue';
   import IconsToolbar from '@/components/toolbars/IconsToolbar.vue';
+
+const toolbarList = [
+  { title: 'Calendar', widget: CalendarToolbar },
+  { title: 'Notes', widget: NotesToolbar },
+  { title: 'CodeMyIonic', widget: CMIToolbar },
+  { title: 'Avatars', widget: AvatarToolbar },
+  { title: 'Search', widget: SearchToolbar },
+  { title: 'Stacked', widget: StackedToolbar },
+  { title: 'Profile', widget: ProfileToolbar },
+  { title: 'Icons', widget: IconsToolbar },
+].sort((a, b) => a.title.localeCompare(b.title));
+
+const group = ref<any | null>(null);
+
+const multiple = ref(false);
+
+const toggleViewAll = () => {
+  multiple.value = !multiple.value;
+  group.value?.$el.querySelectorAll('ion-accordion').forEach((accordion: any) => {
+    if (multiple.value) accordion.expandAccordion();
+    else accordion.collapseAccordion();
+  });
+}
 </script>
 
 <template>
@@ -18,39 +43,35 @@
           <ion-back-button default-href="/" />
         </ion-buttons>
         <ion-title>Toolbars</ion-title>
+        <ion-buttons slot="end">
+          <ion-button @click="toggleViewAll">
+            <ion-icon slot="icon-only" :icon="eye"></ion-icon>
+          </ion-button>
+        </ion-buttons>
       </ion-toolbar>
     </ion-header>
-    <ion-content class="ion-padding">
+    <ion-content>
 
-      <ion-text class="text-padding">Calendar Toolbar</ion-text>
-      <CalendarToolbar></CalendarToolbar>
-      <br>
-      <ion-text class="text-padding">Notes Toolbar</ion-text>
-      <NotesToolbar></NotesToolbar>
-      <br>
-      <ion-text class="text-padding">CMI Toolbar</ion-text>
-      <CMIToolbar></CMIToolbar>
-      <br>
-      <ion-text class="text-padding">Avatar Toolbar</ion-text>
-      <AvatarToolbar></AvatarToolbar>
-      <br>
-      <ion-text class="text-padding">Search Toolbar</ion-text>
-      <SearchToolbar></SearchToolbar>
-      <br>
-      <ion-text class="text-padding">Stacked Toolbar</ion-text>
-      <StackedToolbar></StackedToolbar>
-      <br>
-      <ion-text class="text-padding">Profile Toolbar</ion-text>
-      <ProfileToolbar></ProfileToolbar>
-      <br>
-      <ion-text class="text-padding">Icons Toolbar</ion-text>
-      <IconsToolbar></IconsToolbar>
+      <ion-accordion-group :multiple="multiple" ref="group">
+        <ion-accordion v-for="widget of toolbarList" :key="widget.title">
+          <ion-item slot="header" color="light">
+            <ion-label>{{ widget.title }}</ion-label>
+          </ion-item>
+          <div class="minimal-padding" slot="content">
+            <component :is="widget.widget"></component>
+          </div>
+        </ion-accordion>
+      </ion-accordion-group>
 
     </ion-content>
   </ion-page>
 </template>
 
 <style lang="scss" scoped>
+.minimal-padding {
+  padding: 1px;
+  background-color: var(--ion-color-light-shade);
+}
   .text-padding {
     display: block;
     margin: 0 16px 8px 16px;

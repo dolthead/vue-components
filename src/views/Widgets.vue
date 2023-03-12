@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { IonContent, IonPage, IonHeader, IonToolbar, IonButtons, IonBackButton, IonTitle, IonAccordion, IonAccordionGroup, IonItem, IonLabel } from '@ionic/vue';
+import { IonContent, IonPage, IonHeader, IonToolbar, IonButtons, IonBackButton, IonTitle, IonAccordion, IonAccordionGroup, IonItem, IonLabel, IonButton, IonIcon } from '@ionic/vue';
 import FinanceWidget from '@/components/widgets/FinanceWidget.vue';
 import RecentAppsWidget from '@/components/widgets/RecentAppsWidget.vue';
 import WakeUpWidget from '@/components/widgets/WakeUpWidget.vue';
@@ -15,6 +15,8 @@ import ActivitiesWidget from '@/components/widgets/ActivitiesWidget.vue';
 import WeatherWidget from '@/components/widgets/WeatherWidget.vue';
 import WeatherTimeWidget from '@/components/widgets/WeatherTimeWidget.vue';
 import BirthdayWidget from '@/components/widgets/BirthdayWidget.vue';
+import { eye } from 'ionicons/icons';
+import { ref } from 'vue';
 
 const widgetList = [
   { title: 'Finance', widget: FinanceWidget },
@@ -33,6 +35,18 @@ const widgetList = [
   { title: 'Weather Time', widget: WeatherTimeWidget },
   { title: 'Birthday', widget: BirthdayWidget },
 ].sort((a, b) => a.title.localeCompare(b.title));
+
+const group = ref<any | null>(null);
+
+const multiple = ref(false);
+
+const toggleViewAll = () => {
+  multiple.value = !multiple.value;
+  group.value?.$el.querySelectorAll('ion-accordion').forEach((accordion: any) => {
+    if (multiple.value) accordion.expandAccordion();
+    else accordion.collapseAccordion();
+  });
+}
 </script>
 
 <template>
@@ -43,11 +57,16 @@ const widgetList = [
           <ion-back-button default-href="/" />
         </ion-buttons>
         <ion-title>Widgets</ion-title>
+        <ion-buttons slot="end">
+          <ion-button @click="toggleViewAll">
+            <ion-icon slot="icon-only" :icon="eye"></ion-icon>
+          </ion-button>
+        </ion-buttons>
       </ion-toolbar>
     </ion-header>
     <ion-content class="ion-no-padding">
 
-      <ion-accordion-group>
+      <ion-accordion-group :multiple="multiple" ref="group">
         <ion-accordion v-for="widget of widgetList" :key="widget.title">
           <ion-item slot="header" color="light">
             <ion-label>{{ widget.title }}</ion-label>
