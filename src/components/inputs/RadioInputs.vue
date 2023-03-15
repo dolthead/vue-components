@@ -92,6 +92,8 @@ import { IonContent, IonPage, IonList, IonItem, IonLabel, IonRadioGroup, IonRadi
             ion-radio::part(container) {
                 border-radius: 50px;
                 border: 2px solid #ddd;
+                width: 24px;
+                height: 24px;
             }
 
             ion-radio::part(mark) {
