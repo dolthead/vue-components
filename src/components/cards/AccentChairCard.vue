@@ -10,7 +10,7 @@ import { add } from 'ionicons/icons';
       <div class="price"><i class="currency">$</i>89<i class="penny">.99</i></div>
     </ion-card-header>
     <ion-card-content class="ion-margin-bottom">
-      <ion-img src="https://i.ibb.co/FKcQrkp/pngwing-com-1.png"></ion-img>
+      <ion-img src="/assets/wingchair.png"></ion-img>
     </ion-card-content>
     <div class="cart">
       <ion-button>
@@ -31,7 +31,6 @@ import { add } from 'ionicons/icons';
 
 .card {
   border-radius: 16px;
-  // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px !important;
   background: #ffe9ec;
   letter-spacing: 0.8px;
   margin: 0;
