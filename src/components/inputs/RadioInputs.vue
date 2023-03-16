@@ -81,9 +81,7 @@ import { IonContent, IonPage, IonList, IonItem, IonLabel, IonRadioGroup, IonRadi
             ion-radio {
                 font-size: 1rem;
                 font-weight: 500;
-                letter-spacing: 1px;
                 color: #3e3e3e;
-                font-weight: 500;
                 letter-spacing: 0.8px;
                 margin-left: 16px;
                 height: 100%;

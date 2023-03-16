@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { IonContent, IonPage, IonHeader, IonToolbar, IonButtons, IonBackButton, IonTitle, IonButton, IonIcon, IonAccordionGroup, IonAccordion, IonItem, IonLabel } from '@ionic/vue';
-import { eye } from 'ionicons/icons';
+import { eye, eyeOff } from 'ionicons/icons';
 import { ref } from 'vue';
 import PaymentSegments from '../components/segments/PaymentSegments.vue';
 import ChipSegments from '../components/segments/ChipSegments.vue';
@@ -19,16 +19,11 @@ const widgetList = [
 ].sort((a, b) => a.title.localeCompare(b.title));
 
 const group = ref<any | null>(null);
-
-const multiple = ref(false);
-
+const allClosed = ref(true);
 const toggleViewAll = () => {
-  multiple.value = !multiple.value;
-  group.value?.$el.querySelectorAll('ion-accordion').forEach((accordion: any) => {
-    if (multiple.value) accordion.expandAccordion();
-    else accordion.collapseAccordion();
-  });
-}
+  allClosed.value = !allClosed.value; 
+  group.value.$el.value = allClosed.value ? [] : widgetList.map(x => x.title);
+};
 </script>
 
 <template>
@@ -41,15 +36,15 @@ const toggleViewAll = () => {
         <ion-title>Segments</ion-title>
         <ion-buttons slot="end">
           <ion-button @click="toggleViewAll">
-            <ion-icon slot="icon-only" :icon="eye"></ion-icon>
+            <ion-icon slot="icon-only" :icon="allClosed ? eye : eyeOff"></ion-icon>
           </ion-button>
         </ion-buttons>
       </ion-toolbar>
     </ion-header>
     <ion-content>
 
-      <ion-accordion-group :multiple="multiple" ref="group">
-        <ion-accordion v-for="widget of widgetList" :key="widget.title">
+      <ion-accordion-group :multiple="true" ref="group">
+        <ion-accordion v-for="widget of widgetList" :key="widget.title" :value="widget.title">
           <ion-item slot="header" color="light">
             <ion-label>{{ widget.title }}</ion-label>
           </ion-item>

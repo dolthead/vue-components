@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { IonContent, IonButton, IonIcon, IonPage, IonHeader, IonToolbar, IonButtons, IonBackButton, IonTitle, IonAccordion, IonAccordionGroup, IonItem, IonLabel } from '@ionic/vue';
-import { eye } from 'ionicons/icons';
+import { eye, eyeOff } from 'ionicons/icons';
 import { ref } from 'vue';
 import ElectricCarCard from '@/components/cards/ElectricCarCard.vue';
 import RecentActivityCard from '@/components/cards/RecentActivityCard.vue';
@@ -85,16 +85,11 @@ const cardList = [
 ].sort((a, b) => a.title.localeCompare(b.title));
 
 const group = ref<any | null>(null);
-
-const multiple = ref(false);
-
+const allClosed = ref(true);
 const toggleViewAll = () => {
-  multiple.value = !multiple.value;
-  group.value?.$el.querySelectorAll('ion-accordion').forEach((accordion: any) => {
-    if (multiple.value) accordion.expandAccordion();
-    else accordion.collapseAccordion();
-  });
-}
+  allClosed.value = !allClosed.value; 
+  group.value.$el.value = allClosed.value ? [] : cardList.map(x => x.title);
+};
 </script>
 
 <template>
@@ -107,15 +102,15 @@ const toggleViewAll = () => {
         <ion-title>Cards</ion-title>
         <ion-buttons slot="end">
           <ion-button @click="toggleViewAll">
-            <ion-icon slot="icon-only" :icon="eye"></ion-icon>
+            <ion-icon slot="icon-only" :icon="allClosed ? eye : eyeOff"></ion-icon>
           </ion-button>
         </ion-buttons>
       </ion-toolbar>
     </ion-header>
     <ion-content class="ion-no-padding">
 
-      <ion-accordion-group :multiple="multiple" ref="group">
-        <ion-accordion v-for="card of cardList" :key="card.title">
+      <ion-accordion-group :multiple="true" ref="group">
+        <ion-accordion v-for="card of cardList" :key="card.title" :value="card.title">
           <ion-item slot="header" color="light">
             <ion-label>{{ card.title }}</ion-label>
           </ion-item>
