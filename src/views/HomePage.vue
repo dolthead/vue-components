@@ -1,7 +1,7 @@
 <script lang="ts" setup>
   import { IonContent, IonPage, IonList, IonItem, IonLabel, IonCard, IonCardContent, IonIcon, IonCardHeader, 
     IonCardSubtitle, IonButton, IonHeader, IonToolbar, IonTitle } from '@ionic/vue';
-  import { logoIonic, logoVue, logoAngular, logoReact, logoGithub, chevronForward } from 'ionicons/icons';
+  import { logoIonic, logoVue, logoAngular, logoReact, logoGithub, chevronForward, copyOutline } from 'ionicons/icons';
 
   const sections = [
     'Segments', 'Toolbars', 'Menus', 'Modals', 'Lists', 'Inputs', 'Tabs', 'Screens', 'Slides', 'Cards', 'Widgets'
@@ -22,7 +22,10 @@
 
       <ion-card class="top-card">
         <ion-card-header>
-          <ion-card-subtitle>Copy and paste into your project</ion-card-subtitle>
+          <ion-card-subtitle>
+            <ion-icon :icon="copyOutline"></ion-icon>
+            Copy and paste into your project
+          </ion-card-subtitle>
         </ion-card-header>
         <ion-card-content>
           <p>

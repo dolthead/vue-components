@@ -3,6 +3,7 @@
   import WorkoutSlides from '@/components/slides/WorkoutSlides.vue';
   import HostingSlides from '@/components/slides/HostingSlides.vue';
   import WeatherSlides from '@/components/slides/WeatherSlides.vue';
+  import CopyButton from '@/components/CopyButton.vue';
 </script>
 
 <template>
@@ -17,12 +18,15 @@
     </ion-header>
     <ion-content class="ion-padding">
 
+      <copy-button :path="'slides/WeatherSlides'"></copy-button>
       <ion-text class="text-padding">Weather Slides</ion-text>
       <WeatherSlides></WeatherSlides>
       <br>
+      <copy-button :path="'slides/WorkoutSlides'"></copy-button>
       <ion-text class="text-padding">Workout Slides</ion-text>
       <WorkoutSlides></WorkoutSlides>
       <br>
+      <copy-button :path="'slides/HostingSlides'"></copy-button>
       <ion-text class="text-padding">Hosting Slides</ion-text>
       <HostingSlides></HostingSlides>
 

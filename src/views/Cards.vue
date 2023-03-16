@@ -41,6 +41,7 @@ import EatHappyCard from '@/components/cards/EatHappyCard.vue';
 import DeveloperWeekendsCard from '@/components/cards/DeveloperWeekendsCard.vue';
 import PhotoOfTheDayCard from '@/components/cards/PhotoOfTheDayCard.vue';
 import SweetestTunesCard from '@/components/cards/SweetestTunesCard.vue';
+import CopyButton from '@/components/CopyButton.vue';
 
 const cardList = [
   { title: 'Electric Car', widget: ElectricCarCard },
@@ -116,6 +117,7 @@ const toggleViewAll = () => {
           </ion-item>
           <div class="minimal-padding" slot="content">
             <component :is="card.widget"></component>
+            <copy-button :path="`cards/${card.widget.__name}`"></copy-button>
           </div>
         </ion-accordion>
       </ion-accordion-group>

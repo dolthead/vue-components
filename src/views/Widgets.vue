@@ -17,6 +17,7 @@ import WeatherTimeWidget from '@/components/widgets/WeatherTimeWidget.vue';
 import BirthdayWidget from '@/components/widgets/BirthdayWidget.vue';
 import { eye, eyeOff } from 'ionicons/icons';
 import { ref } from 'vue';
+import CopyButton from '@/components/CopyButton.vue';
 
 const widgetList = [
   { title: 'Finance', widget: FinanceWidget },
@@ -68,6 +69,7 @@ const toggleViewAll = () => {
           </ion-item>
           <div class="minimal-padding" slot="content">
             <component :is="widget.widget"></component>
+            <copy-button :path="`widgets/${widget.widget.__name}`"></copy-button>
           </div>
         </ion-accordion>
       </ion-accordion-group>

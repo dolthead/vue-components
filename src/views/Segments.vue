@@ -2,12 +2,13 @@
 import { IonContent, IonPage, IonHeader, IonToolbar, IonButtons, IonBackButton, IonTitle, IonButton, IonIcon, IonAccordionGroup, IonAccordion, IonItem, IonLabel } from '@ionic/vue';
 import { eye, eyeOff } from 'ionicons/icons';
 import { ref } from 'vue';
-import PaymentSegments from '../components/segments/PaymentSegments.vue';
-import ChipSegments from '../components/segments/ChipSegments.vue';
-import TabSegments from '../components/segments/TabSegments.vue';
-import DotSegments from '../components/segments/DotSegments.vue';
-import MdSegments from '../components/segments/MdSegments.vue';
-import VerticalSegments from '../components/segments/VerticalSegments.vue';
+import PaymentSegments from '@/components/segments/PaymentSegments.vue';
+import ChipSegments from '@/components/segments/ChipSegments.vue';
+import TabSegments from '@/components/segments/TabSegments.vue';
+import DotSegments from '@/components/segments/DotSegments.vue';
+import MdSegments from '@/components/segments/MdSegments.vue';
+import VerticalSegments from '@/components/segments/VerticalSegments.vue';
+import CopyButton from '@/components/CopyButton.vue';
 
 const widgetList = [
   { title: 'Payments', widget: PaymentSegments },
@@ -50,6 +51,7 @@ const toggleViewAll = () => {
           </ion-item>
           <div class="minimal-padding" slot="content">
             <component :is="widget.widget"></component>
+            <copy-button :path="`segments/${widget.widget.__name}`"></copy-button>
           </div>
         </ion-accordion>
       </ion-accordion-group>
@@ -61,7 +63,11 @@ const toggleViewAll = () => {
 <style lang="scss" scoped>
 .minimal-padding {
   padding: 6px;
-  background-color: var(--ion-color-light-shade);
+  // background-color: var(--ion-color-light-shade);
+  // background-color: transparent;
+}
+ion-accordion {
+  background-color: transparent;
 }
   .text-padding {
     display: block;

@@ -1,17 +1,18 @@
 <script lang="ts" setup>
-  import { IonContent, IonPage, IonHeader, IonToolbar, IonButtons, IonBackButton, IonTitle, IonList, IonItem, IonLabel, modalController } from '@ionic/vue';
+import { IonContent, IonPage, IonHeader, IonToolbar, IonButtons, IonBackButton, IonTitle, IonList, IonItem, IonLabel, modalController } from '@ionic/vue';
+import CopyButton from '@/components/CopyButton.vue';
 
-  const sections = [ 'Radio Inputs', 'Signup Inputs', 'Login Inputs', 'Search Input' ].sort();
+const sections = ['Radio Inputs', 'Signup Inputs', 'Login Inputs', 'Search Input'].sort();
 
-  const openModal = async (name: string) => {
-        const modalComponent = (await import(`@/components/inputs/${name.replaceAll(' ', '')}.vue`)).default;
-        const modal = await modalController.create({
-            component: modalComponent,
-            breakpoints: [0, 0.5, 0.95],
-            initialBreakpoint: 0.95,
-        });
-        return modal.present();
-    }
+const openModal = async (name: string) => {
+  const modalComponent = (await import(`@/components/inputs/${name.replaceAll(' ', '')}.vue`)).default;
+  const modal = await modalController.create({
+    component: modalComponent,
+    breakpoints: [0, 0.5, 0.95],
+    initialBreakpoint: 0.95,
+  });
+  return modal.present();
+}
 </script>
 
 <template>
@@ -27,8 +28,9 @@
     <ion-content>
 
       <ion-list>
-        <ion-item v-for="section in sections" :detail="true" @click="openModal(section) " button>
+        <ion-item v-for="section in sections" :detail="true" @click="openModal(section)" button>
           <ion-label>{{ section }}</ion-label>
+          <copy-button :path="`inputs/${section.replaceAll(' ', '')}`"></copy-button>
         </ion-item>
       </ion-list>
 

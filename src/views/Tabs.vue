@@ -8,6 +8,7 @@ import DefaultTabs from '@/components/tabs/DefaultTabs.vue';
 import FilledIconTabs from '@/components/tabs/FilledIconTabs.vue';
 import TopLineTabs from '@/components/tabs/TopLineTabs.vue';
 import ChipTabs from '@/components/tabs/ChipTabs.vue';
+import CopyButton from '@/components/CopyButton.vue';
 
 const tabsList = [
   { title: 'Background', widget: BackgroundTabs },
@@ -50,6 +51,7 @@ const toggleViewAll = () => {
           </ion-item>
           <div class="minimal-padding" slot="content">
             <component :is="widget.widget"></component>
+            <copy-button :path="`tabs/${widget.widget.__name}`"></copy-button>
           </div>
         </ion-accordion>
       </ion-accordion-group>
@@ -61,7 +63,9 @@ const toggleViewAll = () => {
 <style lang="scss" scoped>
 .minimal-padding {
   padding: 1px;
-  background-color: var(--ion-color-light-shade);
+}
+ion-accordion {
+  background-color: transparent;
 }
   .text-padding {
     display: block;

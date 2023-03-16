@@ -1,15 +1,16 @@
 <script lang="ts" setup>
-  import { IonContent, IonPage, IonHeader, IonToolbar, IonButtons, IonButton, IonIcon, IonBackButton, IonTitle, IonAccordion, IonAccordionGroup, IonItem, IonLabel } from '@ionic/vue';
-  import { eye, eyeOff } from 'ionicons/icons';
-  import { ref } from 'vue';
-  import CalendarToolbar from '@/components/toolbars/CalendarToolbar.vue';
-  import NotesToolbar from '@/components/toolbars/NotesToolbar.vue';
-  import CMIToolbar from '@/components/toolbars/CMIToolbar.vue';
-  import AvatarToolbar from '@/components/toolbars/AvatarToolbar.vue';
-  import SearchToolbar from '@/components/toolbars/SearchToolbar.vue';
-  import StackedToolbar from '@/components/toolbars/StackedToolbar.vue';
-  import ProfileToolbar from '@/components/toolbars/ProfileToolbar.vue';
-  import IconsToolbar from '@/components/toolbars/IconsToolbar.vue';
+import { IonContent, IonPage, IonHeader, IonToolbar, IonButtons, IonButton, IonIcon, IonBackButton, IonTitle, IonAccordion, IonAccordionGroup, IonItem, IonLabel } from '@ionic/vue';
+import { eye, eyeOff } from 'ionicons/icons';
+import { ref } from 'vue';
+import CalendarToolbar from '@/components/toolbars/CalendarToolbar.vue';
+import NotesToolbar from '@/components/toolbars/NotesToolbar.vue';
+import CMIToolbar from '@/components/toolbars/CMIToolbar.vue';
+import AvatarToolbar from '@/components/toolbars/AvatarToolbar.vue';
+import SearchToolbar from '@/components/toolbars/SearchToolbar.vue';
+import StackedToolbar from '@/components/toolbars/StackedToolbar.vue';
+import ProfileToolbar from '@/components/toolbars/ProfileToolbar.vue';
+import IconsToolbar from '@/components/toolbars/IconsToolbar.vue';
+import CopyButton from '@/components/CopyButton.vue';
 
 const toolbarList = [
   { title: 'Calendar', widget: CalendarToolbar },
@@ -25,7 +26,7 @@ const toolbarList = [
 const group = ref<any | null>(null);
 const allClosed = ref(true);
 const toggleViewAll = () => {
-  allClosed.value = !allClosed.value; 
+  allClosed.value = !allClosed.value;
   group.value.$el.value = allClosed.value ? [] : toolbarList.map(x => x.title);
 };
 </script>
@@ -54,6 +55,7 @@ const toggleViewAll = () => {
           </ion-item>
           <div class="minimal-padding" slot="content">
             <component :is="widget.widget"></component>
+            <copy-button :path="`toolbars/${widget.widget.__name}`"></copy-button>
           </div>
         </ion-accordion>
       </ion-accordion-group>
@@ -65,13 +67,18 @@ const toggleViewAll = () => {
 <style lang="scss" scoped>
 .minimal-padding {
   padding: 1px;
-  background-color: var(--ion-color-light-shade);
 }
-  .text-padding {
-    display: block;
-    margin: 0 16px 8px 16px;
-    &:first-child {
-      margin-top: 16px;
-    }
+
+ion-accordion {
+  background-color: transparent;
+}
+
+.text-padding {
+  display: block;
+  margin: 0 16px 8px 16px;
+
+  &:first-child {
+    margin-top: 16px;
   }
+}
 </style>
