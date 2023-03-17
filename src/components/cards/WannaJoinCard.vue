@@ -8,7 +8,7 @@ import { closeOutline, checkmarkOutline } from 'ionicons/icons';
      <ion-card-content class="ion-no-padding">
         <ion-item lines="none" slot="header" class="">
            <ion-avatar slot="start">
-              <img src="https://media-exp1.licdn.com/dms/image/D560BAQGzQnTVtMlXRw/company-logo_100_100/0/1667321566629?e=1678924800&v=beta&t=oGUeRywObSYu6e0t-ks4NiEohX2gUj2e85TPuYIl_og" />
+              <img src="/assets/ionicdark.jpg" alt="dark ionic framework logo" />
            </ion-avatar>
            <ion-label><span class="desc">UI Design trends | 2023</span><span class="location">Madison, Wisconsin</span></ion-label>
         </ion-item>

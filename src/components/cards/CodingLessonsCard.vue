@@ -20,10 +20,10 @@ import { play } from 'ionicons/icons';
                  </ion-button>
                  <ul class="avatars">
                     <li class="avatars__item">
-                       <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="avatars__img">
+                       <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="random avatar 1" class="avatars__img">
                     </li>
                     <li class="avatars__item">
-                       <img src="https://images.pexels.com/photos/4921128/pexels-photo-4921128.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="avatars__img">
+                       <img src="https://images.pexels.com/photos/4921128/pexels-photo-4921128.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="random avatar 2" class="avatars__img">
                     </li>
                     <li class="avatars__item">
                        <span class="avatars__initials">KD</span>
