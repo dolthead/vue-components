@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": false,
   "scripts": {
-    "serve": "vite dev",
+    "serve": "vite dev --host",
     "build": "vue-tsc --noEmit && vite build",
     "e2e": "cypress run",
     "test": "vitest",
