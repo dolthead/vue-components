@@ -1,65 +1,61 @@
 <script lang="ts" setup>
-import { IonContent, IonPage, IonItem, IonLabel, IonCard, IonCardContent, IonCardHeader, IonButton, IonProgressBar, IonGrid, IonRow, IonCol, IonImg } from '@ionic/vue';
+import { IonItem, IonLabel, IonCard, IonCardContent, IonCardHeader, IonButton, IonProgressBar, IonGrid, IonRow, IonCol, IonImg } from '@ionic/vue';
 </script>
 
 <template>
-  <ion-page>
-    <ion-content class="ion-padding">
-      <ion-grid class="ion-no-padding">
-        <ion-row>
-          <ion-col size="12">
-            <ion-card class="card">
-              <ion-card-header class="ion-no-padding">
-                <ion-item lines="none">
-                  <ion-label class=""><span class="title">Achievements</span></ion-label>
-                  <ion-button class="ion-no-margin" slot="end" expand="block" fill="clear" shape="round">
-                    View All
-                  </ion-button>
-                </ion-item>
-              </ion-card-header>
-              <ion-card-content>
-                <ion-grid class="ion-no-padding">
-                  <ion-row class="a-section ion-no-padding">
-                    <ion-col size="3">
-                      <ion-img src="https://cdn-icons-png.flaticon.com/512/744/744970.png"></ion-img>
-                    </ion-col>
-                    <ion-col size="9">
-                      <ion-label><span class="title">Activities</span><span class="sub-title">Participated in all
-                          activities</span></ion-label>
-                      <ion-progress-bar :value="0.2"></ion-progress-bar>
-                      <ion-label class="count">1/3</ion-label>
-                    </ion-col>
-                  </ion-row>
-                  <ion-row class="a-section ion-no-padding">
-                    <ion-col size="3">
-                      <ion-img src="https://cdn-icons-png.flaticon.com/512/3884/3884732.png"></ion-img>
-                    </ion-col>
-                    <ion-col size="9">
-                      <ion-label><span class="title">Champion</span><span class="sub-title">Completed all skilled
-                          tasks</span></ion-label>
-                      <ion-label class="a-status">DONE</ion-label>
-                      <ion-label class="count">10/10</ion-label>
-                    </ion-col>
-                  </ion-row>
-                  <ion-row class="a-section ion-no-padding">
-                    <ion-col size="3">
-                      <ion-img src="https://cdn-icons-png.flaticon.com/512/610/610333.png"></ion-img>
-                    </ion-col>
-                    <ion-col size="9">
-                      <ion-label><span class="title">Overtime</span><span class="sub-title">Completed all lessons less
-                          than 5hrs</span></ion-label>
-                      <ion-label class="a-status">DONE</ion-label>
-                      <ion-label class="count">5/5</ion-label>
-                    </ion-col>
-                  </ion-row>
-                </ion-grid>
-              </ion-card-content>
-            </ion-card>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-    </ion-content>
-  </ion-page>
+  <ion-grid class="ion-no-padding">
+    <ion-row>
+      <ion-col size="12">
+        <ion-card class="card">
+          <ion-card-header class="ion-no-padding">
+            <ion-item lines="none">
+              <ion-label class=""><span class="title">Achievements</span></ion-label>
+              <ion-button class="ion-no-margin" slot="end" expand="block" fill="clear" shape="round">
+                View All
+              </ion-button>
+            </ion-item>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-grid class="ion-no-padding">
+              <ion-row class="a-section ion-no-padding">
+                <ion-col size="3">
+                  <ion-img src="https://cdn-icons-png.flaticon.com/512/744/744970.png"></ion-img>
+                </ion-col>
+                <ion-col size="9">
+                  <ion-label><span class="title">Activities</span><span class="sub-title">Participated in all
+                      activities</span></ion-label>
+                  <ion-progress-bar :value="0.2"></ion-progress-bar>
+                  <ion-label class="count">1/3</ion-label>
+                </ion-col>
+              </ion-row>
+              <ion-row class="a-section ion-no-padding">
+                <ion-col size="3">
+                  <ion-img src="https://cdn-icons-png.flaticon.com/512/3884/3884732.png"></ion-img>
+                </ion-col>
+                <ion-col size="9">
+                  <ion-label><span class="title">Champion</span><span class="sub-title">Completed all skilled
+                      tasks</span></ion-label>
+                  <ion-label class="a-status">DONE</ion-label>
+                  <ion-label class="count">10/10</ion-label>
+                </ion-col>
+              </ion-row>
+              <ion-row class="a-section ion-no-padding">
+                <ion-col size="3">
+                  <ion-img src="https://cdn-icons-png.flaticon.com/512/610/610333.png"></ion-img>
+                </ion-col>
+                <ion-col size="9">
+                  <ion-label><span class="title">Overtime</span><span class="sub-title">Completed all lessons less
+                      than 5hrs</span></ion-label>
+                  <ion-label class="a-status">DONE</ion-label>
+                  <ion-label class="count">5/5</ion-label>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </template>
 
 <style lang="scss" scoped>

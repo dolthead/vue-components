@@ -1,48 +1,44 @@
 <script lang="ts" setup>
-import { IonContent, IonPage, IonList, IonItem, IonLabel, IonRadioGroup, IonRadio, IonAvatar, IonGrid, IonRow, IonCol } from '@ionic/vue';
+import { IonList, IonItem, IonLabel, IonRadioGroup, IonRadio, IonAvatar, IonGrid, IonRow, IonCol } from '@ionic/vue';
 </script>
 
 <template>
-    <ion-page>
-        <ion-content>
-            <ion-grid class="card">
-                <ion-row class="ion-margin-vertical">
-                    <ion-col size="12">
-                        <ion-label class="title">Select User List</ion-label>
-                    </ion-col>
-                </ion-row>
-                <ion-row class="">
-                    <ion-col size="12">
-                        <ion-list class="">
-                            <ion-radio-group name="userList" value="userList1">
-                                <ion-item lines="none" color="none" class="ion-no-padding">
-                                    <ion-avatar slot="start">
-                                        <img alt="userList Profile"
-                                            src="https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjE4fHxmYWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
-                                    </ion-avatar>
-                                    <ion-radio value="userList1" class="name" color="primary">Bartosz Chorąży</ion-radio>
-                                </ion-item>
-                                <ion-item lines="none" color="none" class="ion-no-padding">
-                                    <ion-avatar slot="start">
-                                        <img alt="userList Profile"
-                                            src="https://images.unsplash.com/photo-1549237511-6b64e006ce65?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTI2fHxmYWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
-                                    </ion-avatar>
-                                    <ion-radio value="userList2" class="name" color="primary">Vasileios Soutis</ion-radio>
-                                </ion-item>
-                                <ion-item lines="none" color="none" class="ion-no-padding">
-                                    <ion-avatar slot="start">
-                                        <img alt="userList Profile"
-                                            src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" />
-                                    </ion-avatar>
-                                    <ion-radio value="userList3" class="name" color="primary">Loana Albisser</ion-radio>
-                                </ion-item>
-                            </ion-radio-group>
-                        </ion-list>
-                    </ion-col>
-                </ion-row>
-            </ion-grid>
-        </ion-content>
-    </ion-page>
+    <ion-grid class="card">
+        <ion-row class="ion-margin-vertical">
+            <ion-col size="12">
+                <ion-label class="title">Select User List</ion-label>
+            </ion-col>
+        </ion-row>
+        <ion-row class="">
+            <ion-col size="12">
+                <ion-list class="">
+                    <ion-radio-group name="userList" value="userList1">
+                        <ion-item lines="none" color="none" class="ion-no-padding">
+                            <ion-avatar slot="start">
+                                <img alt="userList Profile"
+                                    src="https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjE4fHxmYWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
+                            </ion-avatar>
+                            <ion-radio value="userList1" class="name" color="primary">Bartosz Chorąży</ion-radio>
+                        </ion-item>
+                        <ion-item lines="none" color="none" class="ion-no-padding">
+                            <ion-avatar slot="start">
+                                <img alt="userList Profile"
+                                    src="https://images.unsplash.com/photo-1549237511-6b64e006ce65?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTI2fHxmYWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
+                            </ion-avatar>
+                            <ion-radio value="userList2" class="name" color="primary">Vasileios Soutis</ion-radio>
+                        </ion-item>
+                        <ion-item lines="none" color="none" class="ion-no-padding">
+                            <ion-avatar slot="start">
+                                <img alt="userList Profile"
+                                    src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" />
+                            </ion-avatar>
+                            <ion-radio value="userList3" class="name" color="primary">Loana Albisser</ion-radio>
+                        </ion-item>
+                    </ion-radio-group>
+                </ion-list>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
 </template>
 
 <style lang="scss" scoped>

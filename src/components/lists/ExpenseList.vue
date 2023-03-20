@@ -1,55 +1,51 @@
 <script lang="ts" setup>
-import { IonContent, IonPage, IonItem, IonLabel, IonCard, IonCardContent, IonGrid, IonRow, IonCol, IonAvatar, IonIcon} from '@ionic/vue';
+import { IonItem, IonLabel, IonCard, IonCardContent, IonGrid, IonRow, IonCol, IonAvatar, IonIcon } from '@ionic/vue';
 import { cafe, bagHandle, musicalNotes } from 'ionicons/icons';
 </script>
 
 <template>
-  <ion-page>
-    <ion-content class="ion-padding">
-      <ion-grid class="ion-no-padding">
-        <ion-row>
-          <ion-col size="12">
-            <ion-card class="card">
-              <ion-card-content class="ion-padding-vertical ion-no-padding">
-                <ion-label class="ion-padding-horizontal">
-                  <span class="title">Expenses</span>
-                </ion-label>
-                <ion-item class="" lines="none">
-                  <ion-avatar slot="start" size="large">
-                    <ion-icon :icon="cafe"></ion-icon>
-                  </ion-avatar>
-                  <ion-label><span class="user-name">Starbucks</span><span class="date-time">6:50 pm</span></ion-label>
-                  <div>
-                    <span class="price">$25</span>
-                  </div>
-                </ion-item>
-                <ion-item class="" lines="none">
-                  <ion-avatar slot="start" size="large">
-                    <ion-icon :icon="bagHandle"></ion-icon>
-                  </ion-avatar>
-                  <ion-label><span class="user-name">Shopping</span><span class="date-time">Jun 12, 11:45
-                      am</span></ion-label>
-                  <div>
-                    <span class="price">$125.50</span>
-                  </div>
-                </ion-item>
-                <ion-item class="" lines="none">
-                  <ion-avatar slot="start" size="large">
-                    <ion-icon :icon="musicalNotes"></ion-icon>
-                  </ion-avatar>
-                  <ion-label><span class="user-name">Apple Music</span><span class="date-time">May 20, 1:07
-                      pm</span></ion-label>
-                  <div>
-                    <span class="price">$99</span>
-                  </div>
-                </ion-item>
-              </ion-card-content>
-            </ion-card>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-    </ion-content>
-  </ion-page>
+  <ion-grid class="ion-no-padding">
+    <ion-row>
+      <ion-col size="12">
+        <ion-card class="card">
+          <ion-card-content class="ion-padding-vertical ion-no-padding">
+            <ion-label class="ion-padding-horizontal">
+              <span class="title">Expenses</span>
+            </ion-label>
+            <ion-item class="" lines="none">
+              <ion-avatar slot="start" size="large">
+                <ion-icon :icon="cafe"></ion-icon>
+              </ion-avatar>
+              <ion-label><span class="user-name">Starbucks</span><span class="date-time">6:50 pm</span></ion-label>
+              <div>
+                <span class="price">$25</span>
+              </div>
+            </ion-item>
+            <ion-item class="" lines="none">
+              <ion-avatar slot="start" size="large">
+                <ion-icon :icon="bagHandle"></ion-icon>
+              </ion-avatar>
+              <ion-label><span class="user-name">Shopping</span><span class="date-time">Jun 12, 11:45
+                  am</span></ion-label>
+              <div>
+                <span class="price">$125.50</span>
+              </div>
+            </ion-item>
+            <ion-item class="" lines="none">
+              <ion-avatar slot="start" size="large">
+                <ion-icon :icon="musicalNotes"></ion-icon>
+              </ion-avatar>
+              <ion-label><span class="user-name">Apple Music</span><span class="date-time">May 20, 1:07
+                  pm</span></ion-label>
+              <div>
+                <span class="price">$99</span>
+              </div>
+            </ion-item>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </template>
 
 <style lang="scss" scoped>

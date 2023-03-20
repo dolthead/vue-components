@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { IonContent, IonPage, IonLabel, IonGrid, IonRow, IonCol, IonSearchbar, IonAvatar } from '@ionic/vue';
+import { IonLabel, IonGrid, IonRow, IonCol, IonSearchbar, IonAvatar } from '@ionic/vue';
 import { ref } from 'vue';
 
 const searchText = ref('');
@@ -46,34 +46,29 @@ const filterList = () => {
 </script>
 
 <template>
-    <ion-page>
-        <ion-content class="ion-padding">
-            <ion-grid class="widget">
-                <ion-row class="ion-padding-top">
-                    <ion-col size="12">
-                        <ion-searchbar v-model="searchText" class="ion-no-padding" show-clear-button="focus"
-                            placeholder="Search" mode="ios" @ion-change="filterList" :debounce="0"></ion-searchbar>
-                    </ion-col>
-                </ion-row>
-                <ion-row>
-                    <ion-col size="3" class="ion-text-center ion-margin-bottom person" v-for="profile in result">
-                        <div class="contact-person">
-                            <ion-avatar>
-                                <img alt="Name" :src="profile.img" />
-                            </ion-avatar>
-                        </div>
-                        <ion-label class="name">{{ profile.name }}</ion-label>
-                    </ion-col>
-                    <ion-col size="12" class="ion-padding-bottom ion-text-center no-result-found"
-                        v-show="result.length === 0">
-                        <img
-                            src="https://www.getillustrations.com/packs/flat-vector-illustrations-for-websites/scenes/_1x/files%20and%20folders,%20search%20_%20folder,%20file,%20document,%20find,%20scan,%20delete_sm.png" />
-                        <div class="title ion-padding-vertcal">No Result Found</div>
-                    </ion-col>
-                </ion-row>
-            </ion-grid>
-        </ion-content>
-    </ion-page>
+    <ion-grid class="widget">
+        <ion-row class="ion-padding-top">
+            <ion-col size="12">
+                <ion-searchbar v-model="searchText" class="ion-no-padding" show-clear-button="focus" placeholder="Search"
+                    mode="ios" @ion-change="filterList" :debounce="0"></ion-searchbar>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col size="3" class="ion-text-center ion-margin-bottom person" v-for="profile in result">
+                <div class="contact-person">
+                    <ion-avatar>
+                        <img alt="Name" :src="profile.img" />
+                    </ion-avatar>
+                </div>
+                <ion-label class="name">{{ profile.name }}</ion-label>
+            </ion-col>
+            <ion-col size="12" class="ion-padding-bottom ion-text-center no-result-found" v-show="result.length === 0">
+                <img
+                    src="https://www.getillustrations.com/packs/flat-vector-illustrations-for-websites/scenes/_1x/files%20and%20folders,%20search%20_%20folder,%20file,%20document,%20find,%20scan,%20delete_sm.png" />
+                <div class="title ion-padding-vertcal">No Result Found</div>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
 </template>
 
 <style lang="scss" scoped>

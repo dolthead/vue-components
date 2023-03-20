@@ -1,90 +1,86 @@
 <script lang="ts" setup>
-import { IonContent, IonPage, IonItem, IonLabel, IonCard, IonCardContent, IonAvatar, IonGrid, IonRow, IonCol, IonBadge } from '@ionic/vue';
+import { IonItem, IonLabel, IonCard, IonCardContent, IonAvatar, IonGrid, IonRow, IonCol, IonBadge } from '@ionic/vue';
 </script>
 
 <template>
-  <ion-page>
-    <ion-content class="ion-padding ion-text-center">
-      <ion-grid class="ion-no-padding">
-        <ion-row>
-          <ion-col size="12">
-            <ion-card class="card">
-              <ion-card-content class="ion-padding-vertical ion-no-padding">
-                <!-- place ion-item "active" class to view unreaded/latest messages -->
-                <ion-item class="">
-                  <ion-avatar slot="start" size="large">
-                    <img alt="profile"
-                      src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" />
-                  </ion-avatar>
-                  <ion-label><span class="user-name">Milovan Thomas</span><span class="msg">Can we have a
-                      call?</span></ion-label>
-                  <div>
-                    <span class="day-time">9:45 pm</span>
-                    <span class="msg-count">
-                      <ion-badge shape="circle" slot="end" color="primary">2</ion-badge>
-                    </span>
-                  </div>
-                </ion-item>
-                <ion-item class="active">
-                  <ion-avatar slot="start" size="large">
-                    <img alt="profile"
-                      src="https://images.unsplash.com/photo-1616766098946-e4fabb7d6da0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" />
-                  </ion-avatar>
-                  <ion-label><span class="user-name">Alina Vranjes</span><span class="msg">How can I help
-                      you?</span></ion-label>
-                  <div>
-                    <span class="day-time">8:32 pm</span>
-                    <span class="msg-count">
-                      <ion-badge shape="circle" slot="end" color="primary">2</ion-badge>
-                    </span>
-                  </div>
-                </ion-item>
-                <ion-item class="">
-                  <ion-avatar slot="start" size="large">
-                    <img alt="profile"
-                      src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" />
-                  </ion-avatar>
-                  <ion-label><span class="user-name">Vanessa</span><span class="msg typing">typing...</span></ion-label>
-                  <div>
-                    <span class="day-time">yesterday</span>
-                    <span class="msg-count">
-                      <ion-badge shape="circle" slot="end" color="primary">2</ion-badge>
-                    </span>
-                  </div>
-                </ion-item>
-                <ion-item class="">
-                  <ion-avatar slot="start" size="large">
-                    <img alt="profile"
-                      src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" />
-                  </ion-avatar>
-                  <ion-label><span class="user-name">Eduardo</span><span class="msg">Please have a look at attached
-                      document.</span></ion-label>
-                  <div>
-                    <span class="day-time">Mon</span>
-                    <span class="msg-count">
-                      <ion-badge shape="circle" slot="end" color="primary">2</ion-badge>
-                    </span>
-                  </div>
-                </ion-item>
-                <ion-item class="">
-                  <ion-avatar slot="start" size="large">
-                    <img alt="profile" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
-                  </ion-avatar>
-                  <ion-label><span class="user-name">Yagan</span><span class="msg">Can we connect?</span></ion-label>
-                  <div>
-                    <span class="day-time">Sun</span>
-                    <span class="msg-count">
-                      <ion-badge shape="circle" slot="end" color="primary">2</ion-badge>
-                    </span>
-                  </div>
-                </ion-item>
-              </ion-card-content>
-            </ion-card>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-    </ion-content>
-  </ion-page>
+  <ion-grid class="ion-no-padding">
+    <ion-row>
+      <ion-col size="12">
+        <ion-card class="card">
+          <ion-card-content class="ion-padding-vertical ion-no-padding">
+            <!-- place ion-item "active" class to view unreaded/latest messages -->
+            <ion-item class="">
+              <ion-avatar slot="start" size="large">
+                <img alt="profile"
+                  src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" />
+              </ion-avatar>
+              <ion-label><span class="user-name">Milovan Thomas</span><span class="msg">Can we have a
+                  call?</span></ion-label>
+              <div>
+                <span class="day-time">9:45 pm</span>
+                <span class="msg-count">
+                  <ion-badge shape="circle" slot="end" color="primary">2</ion-badge>
+                </span>
+              </div>
+            </ion-item>
+            <ion-item class="active">
+              <ion-avatar slot="start" size="large">
+                <img alt="profile"
+                  src="https://images.unsplash.com/photo-1616766098946-e4fabb7d6da0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" />
+              </ion-avatar>
+              <ion-label><span class="user-name">Alina Vranjes</span><span class="msg">How can I help
+                  you?</span></ion-label>
+              <div>
+                <span class="day-time">8:32 pm</span>
+                <span class="msg-count">
+                  <ion-badge shape="circle" slot="end" color="primary">2</ion-badge>
+                </span>
+              </div>
+            </ion-item>
+            <ion-item class="">
+              <ion-avatar slot="start" size="large">
+                <img alt="profile"
+                  src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" />
+              </ion-avatar>
+              <ion-label><span class="user-name">Vanessa</span><span class="msg typing">typing...</span></ion-label>
+              <div>
+                <span class="day-time">yesterday</span>
+                <span class="msg-count">
+                  <ion-badge shape="circle" slot="end" color="primary">2</ion-badge>
+                </span>
+              </div>
+            </ion-item>
+            <ion-item class="">
+              <ion-avatar slot="start" size="large">
+                <img alt="profile"
+                  src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fGZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" />
+              </ion-avatar>
+              <ion-label><span class="user-name">Eduardo</span><span class="msg">Please have a look at attached
+                  document.</span></ion-label>
+              <div>
+                <span class="day-time">Mon</span>
+                <span class="msg-count">
+                  <ion-badge shape="circle" slot="end" color="primary">2</ion-badge>
+                </span>
+              </div>
+            </ion-item>
+            <ion-item class="">
+              <ion-avatar slot="start" size="large">
+                <img alt="profile" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+              </ion-avatar>
+              <ion-label><span class="user-name">Yagan</span><span class="msg">Can we connect?</span></ion-label>
+              <div>
+                <span class="day-time">Sun</span>
+                <span class="msg-count">
+                  <ion-badge shape="circle" slot="end" color="primary">2</ion-badge>
+                </span>
+              </div>
+            </ion-item>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </template>
 
 <style lang="scss" scoped>
@@ -200,4 +196,5 @@ import { IonContent, IonPage, IonItem, IonLabel, IonCard, IonCardContent, IonAva
       }
     }
   }
-}</style>
+}
+</style>

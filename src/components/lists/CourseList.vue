@@ -1,83 +1,79 @@
 <script lang="ts" setup>
-import { IonContent, IonPage, IonItem, IonLabel, IonCard, IonCardContent, IonGrid, IonRow, IonCol, IonButton, IonCardHeader, IonImg, IonProgressBar, IonIcon } from '@ionic/vue';
+import { IonItem, IonLabel, IonCard, IonCardContent, IonGrid, IonRow, IonCol, IonButton, IonCardHeader, IonImg, IonProgressBar, IonIcon } from '@ionic/vue';
 import { play } from 'ionicons/icons';
 </script>
 
 <template>
-  <ion-page>
-    <ion-content class="ion-padding">
-      <ion-grid class="ion-no-padding">
-        <ion-row>
-          <ion-col size="12">
-            <ion-card class="card">
-              <ion-card-header class="ion-no-padding">
-                <ion-item lines="none">
-                  <ion-label class="">
-                    <span class="title">Progress</span><span class="sub-title">Courses</span>
-                  </ion-label>
-                  <ion-button class="ion-no-margin" slot="end" expand="block" fill="clear" shape="round">
-                    View All
+  <ion-grid class="ion-no-padding">
+    <ion-row>
+      <ion-col size="12">
+        <ion-card class="card">
+          <ion-card-header class="ion-no-padding">
+            <ion-item lines="none">
+              <ion-label class="">
+                <span class="title">Progress</span><span class="sub-title">Courses</span>
+              </ion-label>
+              <ion-button class="ion-no-margin" slot="end" expand="block" fill="clear" shape="round">
+                View All
+              </ion-button>
+            </ion-item>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-grid class="ion-no-padding">
+              <ion-row class="a-section ion-no-padding ion-align-items-center">
+                <ion-col size="4">
+                  <ion-img
+                    src="https://images.pexels.com/photos/1264210/pexels-photo-1264210.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></ion-img>
+                </ion-col>
+                <ion-col size="6">
+                  <ion-label><span class="title">Photography</span></ion-label>
+                  <ion-progress-bar :value="0.25"></ion-progress-bar>
+                  <ion-label class="count">25%</ion-label>
+                </ion-col>
+                <ion-col size="2">
+                  <ion-button fill="solid" shape="round" color="light" class="ion-no-margin">
+                    <ion-icon :icon="play"></ion-icon>
                   </ion-button>
-                </ion-item>
-              </ion-card-header>
-              <ion-card-content>
-                <ion-grid class="ion-no-padding">
-                  <ion-row class="a-section ion-no-padding ion-align-items-center">
-                    <ion-col size="4">
-                      <ion-img
-                        src="https://images.pexels.com/photos/1264210/pexels-photo-1264210.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></ion-img>
-                    </ion-col>
-                    <ion-col size="6">
-                      <ion-label><span class="title">Photography</span></ion-label>
-                      <ion-progress-bar :value="0.25"></ion-progress-bar>
-                      <ion-label class="count">25%</ion-label>
-                    </ion-col>
-                    <ion-col size="2">
-                      <ion-button fill="solid" shape="round" color="light" class="ion-no-margin">
-                        <ion-icon :icon="play"></ion-icon>
-                      </ion-button>
-                    </ion-col>
-                  </ion-row>
-                  <ion-row class="a-section ion-no-padding ion-align-items-center">
-                    <ion-col size="4">
-                      <ion-img
-                        src="https://images.unsplash.com/photo-1551721434-8b94ddff0e6d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bW9iaWxlJTIwYXBwJTIwZGVzaWdufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"></ion-img>
-                    </ion-col>
-                    <ion-col size="6">
-                      <ion-label><span class="title">UI/UX Design</span></ion-label>
-                      <ion-progress-bar :value="0.5"></ion-progress-bar>
-                      <ion-label class="count">50%</ion-label>
-                    </ion-col>
-                    <ion-col size="2">
-                      <ion-button fill="solid" shape="round" color="light" class="ion-no-margin">
-                        <ion-icon :icon="play"></ion-icon>
-                      </ion-button>
-                    </ion-col>
-                  </ion-row>
-                  <ion-row class="a-section ion-no-padding ion-align-items-center">
-                    <ion-col size="4">
-                      <ion-img
-                        src="https://images.pexels.com/photos/1784578/pexels-photo-1784578.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></ion-img>
-                    </ion-col>
-                    <ion-col size="6">
-                      <ion-label><span class="title">Animation</span></ion-label>
-                      <ion-progress-bar :value="0.8"></ion-progress-bar>
-                      <ion-label class="count">80%</ion-label>
-                    </ion-col>
-                    <ion-col size="2">
-                      <ion-button fill="solid" shape="round" color="light" class="ion-no-margin">
-                        <ion-icon :icon="play"></ion-icon>
-                      </ion-button>
-                    </ion-col>
-                  </ion-row>
-                </ion-grid>
-              </ion-card-content>
-            </ion-card>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-    </ion-content>
-  </ion-page>
+                </ion-col>
+              </ion-row>
+              <ion-row class="a-section ion-no-padding ion-align-items-center">
+                <ion-col size="4">
+                  <ion-img
+                    src="https://images.unsplash.com/photo-1551721434-8b94ddff0e6d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bW9iaWxlJTIwYXBwJTIwZGVzaWdufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"></ion-img>
+                </ion-col>
+                <ion-col size="6">
+                  <ion-label><span class="title">UI/UX Design</span></ion-label>
+                  <ion-progress-bar :value="0.5"></ion-progress-bar>
+                  <ion-label class="count">50%</ion-label>
+                </ion-col>
+                <ion-col size="2">
+                  <ion-button fill="solid" shape="round" color="light" class="ion-no-margin">
+                    <ion-icon :icon="play"></ion-icon>
+                  </ion-button>
+                </ion-col>
+              </ion-row>
+              <ion-row class="a-section ion-no-padding ion-align-items-center">
+                <ion-col size="4">
+                  <ion-img
+                    src="https://images.pexels.com/photos/1784578/pexels-photo-1784578.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></ion-img>
+                </ion-col>
+                <ion-col size="6">
+                  <ion-label><span class="title">Animation</span></ion-label>
+                  <ion-progress-bar :value="0.8"></ion-progress-bar>
+                  <ion-label class="count">80%</ion-label>
+                </ion-col>
+                <ion-col size="2">
+                  <ion-button fill="solid" shape="round" color="light" class="ion-no-margin">
+                    <ion-icon :icon="play"></ion-icon>
+                  </ion-button>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </template>
 
 <style lang="scss" scoped>
