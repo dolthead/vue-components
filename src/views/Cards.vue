@@ -116,8 +116,8 @@ const toggleViewAll = () => {
             <ion-label>{{ card.title }}</ion-label>
           </ion-item>
           <div class="minimal-padding" slot="content">
-            <component :is="card.widget"></component>
             <copy-button :path="`cards/${card.widget.__name}`"></copy-button>
+            <component :is="card.widget"></component>
           </div>
         </ion-accordion>
       </ion-accordion-group>

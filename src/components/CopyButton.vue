@@ -45,13 +45,14 @@ async function showErrorToast(error: string) {
 <template>
     <ion-button fill="clear" size="small" class="ion-float-right" 
         @click.stop="copySource($attrs.path as string)"
-        title="Copy the component's source to the clipboard">
+        title="Copy the component's source to the clipboard" v-bind="$attrs">
         <ion-icon slot="icon-only" :icon="copyOutline"></ion-icon>
     </ion-button>
+    <br clear="right">
 </template>
 
 <style lang="scss" scoped>
 ion-button {
-    margin: auto auto;
+    margin-bottom: 8px;
 }
 </style>
