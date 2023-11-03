@@ -115,10 +115,7 @@ import { chevronBackOutline } from 'ionicons/icons';
         border-radius: 20px;
         padding: 0px 25px;
         margin: 0;
-
-        // @media (max-width: 767px) {
-            height: 788vh;
-        // }
+        height: 788vh;
 
         @media (min-width: 992px) {
             background-color: #fff !important;

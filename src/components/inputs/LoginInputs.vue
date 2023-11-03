@@ -77,12 +77,7 @@ import { IonItem, IonGrid, IonRow, IonCol, IonInput, IonButton } from '@ionic/vu
         border-radius: 20px;
         margin: 0;
         padding: 20px;
-
-        // @media (max-width: 767px) {
-            height: 78vh;
-        //     display: flex;
-        //     align-items: center;
-        // }
+        height: 78vh;
     }
 
     .title {

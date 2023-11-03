@@ -3,7 +3,7 @@ import { IonGrid, IonRow, IonCol, IonLabel } from '@ionic/vue';
 </script>
 
 <template>
-  <ion-grid class="ion-no-padding">
+  <ion-grid>
     <ion-row class="widget">
       <ion-col size="12" class="ion-padding-horizontal">
         <ion-label class=""><span class="sub-title">Trending</span></ion-label>
@@ -22,7 +22,7 @@ import { IonGrid, IonRow, IonCol, IonLabel } from '@ionic/vue';
   background-position: bottom;
   background-size: cover;
   border-radius: 16px !important;
-  height: auto;
+  height: 192px;
   width: 100%;
   margin: 0px !important;
   padding: 0px !important;
@@ -52,8 +52,10 @@ import { IonGrid, IonRow, IonCol, IonLabel } from '@ionic/vue';
   p {
     letter-spacing: 1.2px;
     text-align: justify;
+    line-height: 1.2em;
     color: #e1e1e1;
-    font-weight: 500;
+    font-weight: 800;
+    font-size: 1.1em;
   }
 }
 </style>
