@@ -1,5 +1,5 @@
 # vue-components
- Vue 3 Ionic 6 vite ui components
+ Vue 3 Ionic 7.5 vite ui components
 
 > `npm i`
 > 
