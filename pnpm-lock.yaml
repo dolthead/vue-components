@@ -24,14 +24,14 @@ importers:
         specifier: 4.0.1
         version: 4.0.1(@capacitor/core@4.2.0)
       '@ionic/core':
-        specifier: ^7.8.6
-        version: 7.8.6
+        specifier: ^8.1.0
+        version: 8.1.0
       '@ionic/vue':
-        specifier: ^7.8.6
-        version: 7.8.6
+        specifier: ^8.1.0
+        version: 8.1.0
       '@ionic/vue-router':
-        specifier: ^7.8.6
-        version: 7.8.6
+        specifier: ^8.1.0
+        version: 8.1.0
       core-js:
         specifier: ^3.37.0
         version: 3.37.0
@@ -922,8 +922,8 @@ packages:
     resolution: {integrity: sha512-TshtaFQsovB4NWRBydbNFawql6yul7d5bMiW1WYYf17hd99V6xdDdk3vtF51bw6sLkxON3bDQpWsnUc9/hVo3g==}
     engines: {node: '>=16.0.0'}
 
-  '@ionic/core@7.8.6':
-    resolution: {integrity: sha512-HAYZdEmeJgOdo2kDlZkcCGHb+zs/vjU6iv4skbVBL7y+OnSv/oC2u83Yee8S3/aY0YAxkyBgu7hLTYH13Zc2Aw==}
+  '@ionic/core@8.1.0':
+    resolution: {integrity: sha512-CTa0JZA7T0Je7HiAinj/kjpxChQYDvitFBqMtNv88nOJn1KerbUKmV2JfQ0quNFneN8z/bBdNOaKc8T++cyDyg==}
 
   '@ionic/utils-array@2.1.6':
     resolution: {integrity: sha512-0JZ1Zkp3wURnv8oq6Qt7fMPo5MpjbLoUoa9Bu2Q4PJuSDWM8H8gwF3dQO7VTeUj3/0o1IB1wGkFWZZYgUXZMUg==}
@@ -957,11 +957,11 @@ packages:
     resolution: {integrity: sha512-3cKScz9Jx2/Pr9ijj1OzGlBDfcmx7OMVBt4+P1uRR0SSW4cm1/y3Mo4OY3lfkuaYifMNBW8Wz6lQHbs1bihr7A==}
     engines: {node: '>=16.0.0'}
 
-  '@ionic/vue-router@7.8.6':
-    resolution: {integrity: sha512-YVGqO6yyNBrwxYJfulPCLy6XBBJ0eDiy97XxLbHlaGx9WZJpf+NE+NA7N4Zj+IMTopCAX+YU/PS70OoTM7hITQ==}
+  '@ionic/vue-router@8.1.0':
+    resolution: {integrity: sha512-Wu0lOzAZbVuEoI3vVmaKaOAZ6GUYlFu9kvq126RPMUC/bh8Q64MSjI5eVAFxVFQQfcA27b7BxQwVVOqpQfhx2A==}
 
-  '@ionic/vue@7.8.6':
-    resolution: {integrity: sha512-WVngbTA08SlVbyj4rS9krVJ2Z9Uv/MG1xItDS7WqMPeVwRNGaOiw6MkxjXRcpIz6qE0b+6EjIcte5h4nGRiDCw==}
+  '@ionic/vue@8.1.0':
+    resolution: {integrity: sha512-KjyWomJGdBhpYuVModSwrD1JK2dFpwfPznorlaX8Srt087BMpKEoKYK9bkPj6VILaOkMN3FI8eIgChFt7JYq3A==}
 
   '@isaacs/cliui@8.0.2':
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
@@ -5362,7 +5362,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@ionic/core@7.8.6':
+  '@ionic/core@8.1.0':
     dependencies:
       '@stencil/core': 4.18.0
       ionicons: 7.4.0
@@ -5450,13 +5450,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@ionic/vue-router@7.8.6':
+  '@ionic/vue-router@8.1.0':
     dependencies:
-      '@ionic/vue': 7.8.6
+      '@ionic/vue': 8.1.0
 
-  '@ionic/vue@7.8.6':
+  '@ionic/vue@8.1.0':
     dependencies:
-      '@ionic/core': 7.8.6
+      '@ionic/core': 8.1.0
       ionicons: 7.4.0
 
   '@isaacs/cliui@8.0.2':
