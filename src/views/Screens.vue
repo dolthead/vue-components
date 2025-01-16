@@ -12,7 +12,7 @@ const sections = ['FinTech Screen', 'Feeds & Profile Screens', 'Home Screen', 'T
         <ion-buttons slot="start">
           <ion-back-button default-href="/" />
         </ion-buttons>
-        <ion-title>Menus (w/ Split Pane)</ion-title>
+        <ion-title>Screens</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content>

@@ -8,12 +8,11 @@ import 'swiper/css';
 <template>
     <div id="swiper-container">
         <swiper class="mySwiper" :slidesPerView="1.2" :initialSlide="1" :freeMode="true" :cssMode="false" :autoplay="false"
-            :centeredSlides="true" :spaceBetween="18" :keyboard="false" :pagination="false" :scrollbar="false" :zoom="false"
-            :breakpoints="{ '640': { slidesPerView: 1.2, spaceBetween: 8 }, '768': { slidesPerView: 3, spaceBetween: 40 }, '1024': { slidesPerView: 3, spaceBetween: 50 } }">
+            :centeredSlides="true" :spaceBetween="18" :keyboard="false" :pagination="false" :scrollbar="false" :zoom="false">
             <swiper-slide>
                 <div class="card">
                     <div class="event">
-                        <img src="https://pngfreepic.com/wp-content/uploads/2021/06/fitness-32-276x350.png?v=1664972359"
+                        <img src="http://pngfreepic.com/wp-content/uploads/2021/06/fitness-32-276x350.png?v=1664972359"
                             alt="Live Workout" />
                         <a class="date">
                             <ion-icon :icon="time"></ion-icon>
@@ -33,7 +32,7 @@ import 'swiper/css';
             <swiper-slide>
                 <div class="card">
                     <div class="event">
-                        <img src="https://pngfreepic.com/wp-content/uploads/2021/06/fitness-png-72-227x350.png?v=1664972521"
+                        <img src="http://pngfreepic.com/wp-content/uploads/2021/06/fitness-png-72-227x350.png?v=1664972521"
                             alt="Live Workout" />
                         <a class="date">
                             <ion-icon :icon="calendarClear"></ion-icon>
@@ -53,7 +52,7 @@ import 'swiper/css';
             <swiper-slide>
                 <div class="card">
                     <div class="event">
-                        <img src="https://pngfreepic.com/wp-content/uploads/2021/06/fitness-png-64-261x350.png?v=1664972502"
+                        <img src="http://pngfreepic.com/wp-content/uploads/2021/06/fitness-png-64-261x350.png?v=1664972502"
                             alt="Live Workout" />
                         <a class="date">
                             <ion-icon :icon="calendarClear"></ion-icon>

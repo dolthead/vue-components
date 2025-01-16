@@ -43,7 +43,7 @@ const toggleViewAll = () => {
           <ion-item slot="header" color="light">
             <ion-label>{{ widget.title }}</ion-label>
           </ion-item>
-          <div class="minimal-padding" slot="content">
+          <div class="minimal-padding" slot="content" stylexx="max-width: unset">
             <copy-button :path="`slides/${widget.widget.__name}`"></copy-button>
             <component :is="widget.widget"></component>
           </div>

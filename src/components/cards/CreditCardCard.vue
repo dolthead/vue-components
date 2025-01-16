@@ -55,7 +55,7 @@ ion-card.card {
   background-position: center;
   background-size: cover;
   height: 216px;
-  margin: 0;
+  margin: 0 auto;
   padding: 16px;
   min-width: 270px;
   max-width: 350px;

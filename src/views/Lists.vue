@@ -61,9 +61,6 @@ const toggleViewAll = () => {
 </template>
 
 <style lang="scss" scoped>
-.minimal-padding {
-  padding: 6px;
-}
 ion-accordion {
   background-color: transparent;
 }

@@ -7,7 +7,7 @@ import { chevronBackOutline } from 'ionicons/icons';
     <div class="login-bg">
         <ion-grid class="ion-no-padding">
             <ion-row class="ion-justify-content-center">
-                <ion-col class="card" size="12" size-sm="6" size-md="4" size-lg="3">
+                <ion-col class="card" size="12">
                     <form>
                         <ion-row class="ion-padding-vertical ion-hide-sm-down">
                             <ion-col size="12">
@@ -114,7 +114,7 @@ import { chevronBackOutline } from 'ionicons/icons';
         background-color: #ededed !important;
         border-radius: 20px;
         padding: 0px 25px;
-        margin: 0;
+        // margin: 0;
         height: 788vh;
 
         @media (min-width: 992px) {

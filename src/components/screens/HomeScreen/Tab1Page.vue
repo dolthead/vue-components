@@ -216,7 +216,6 @@ ion-header {
         .cart-btn {
             border-radius: 12px;
             height: 45px !important;
-            // width: 40px;
             position: relative;
             overflow: visible !important;
             margin-right: 8px;
@@ -242,6 +241,9 @@ ion-header {
     padding-top: 8px;
     background: #fff !important;
     --background: #fff !important;
+    margin: 0 auto;
+
+    max-width: 400px;
 
     .swiper {
         width: 100vw !important;

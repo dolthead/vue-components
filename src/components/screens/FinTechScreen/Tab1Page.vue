@@ -325,6 +325,10 @@ ion-header {
 ion-content {
     --background: #fff;
 
+    ion-grid {
+        max-width: 400px;
+    }
+
     #heroSlider {
         .swiper {
             .swiper-wrapper {

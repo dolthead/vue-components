@@ -1,2 +1,8 @@
 /* Ionic Variables and Theming. For more info, please see:
 http://ionicframework.com/docs/theming/ */
+
+.minimal-padding {
+  padding: 6px;
+  max-width: 500px;
+  margin-inline: auto;
+}
