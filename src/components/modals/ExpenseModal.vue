@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { IonContent, IonPage, IonHeader, IonToolbar, IonButtons, IonTitle, IonList, IonItem, IonLabel, IonAvatar, IonRadioGroup, IonRadio, IonButton, IonIcon, IonRow, IonCol, modalController } from '@ionic/vue';
+import { IonContent, IonPage, IonHeader, IonToolbar, IonButtons, IonTitle, IonList, IonItem, IonAvatar, IonRadioGroup, IonRadio, IonButton, IonIcon, IonRow, IonCol, modalController } from '@ionic/vue';
 import { closeOutline } from 'ionicons/icons';
 </script>
 
@@ -60,6 +60,10 @@ import { closeOutline } from 'ionicons/icons';
 </template>
 
 <style lang="scss" scoped>
+ion-content {
+    --background: white;
+}
+
 ion-title {
     letter-spacing: 1px;
     display: inline-flex;
@@ -124,7 +128,7 @@ ion-button {
 .title-row {
     padding-top: 16px !important;
     ion-col {
-      display: block;
+        display: block;
     }
-  }
-  </style>
+}
+</style>

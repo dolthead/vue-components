@@ -172,13 +172,13 @@ import 'swiper/css';
 
                 p {
                     display: flex;
+                    margin-inline: auto;
                     align-items: center;
                     height: 70px;
                     letter-spacing: 1px;
                     font-size: 1rem;
                     font-weight: 500;
                     color: #818181;
-                    margin: 5% 8% 8%;
                 }
             }
 

@@ -40,7 +40,7 @@
           </p>
           <br>
           <p>
-            ✅ Updated to Ionic 8.1, Vue 3.4, and Vite 5.2 on 27 May 2024.
+            ✅ Updated to Ionic 8.3, Vue 3.5, and Vite 5.4 on 16 Oct 2024.
           </p>
           <br>
         <ion-button fill="outline" href="https://github.com/dolthead/vue-components/tree/main/src/components">
