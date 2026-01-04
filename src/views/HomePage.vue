@@ -29,8 +29,9 @@
         </ion-card-header>
         <ion-card-content>
           <p>
-            Based on the designs on <a href="https://www.codemyionic.com/" target="_blank">CodeMyIonic.com</a> from <a href="https://github.com/sidh41" target="_blank">@sidh41</a>.
-            Visit CodeMyIonic.com for side-by-side Angular, React, and (coming soon) Vue examples.
+            <!-- Based on the designs on <a href="https://www.codemyionic.com/" target="_blank">CodeMyIonic.com</a> from <a href="https://github.com/sidh41" target="_blank">@sidh41</a>. -->
+            Based on the designs from <a href="https://github.com/sidh41" target="_blank">@sidh41</a> in Angular and React.
+            <!-- Visit CodeMyIonic.com for side-by-side Angular, React, and (coming soon) Vue examples. -->
           </p>
           <br>
           <p>
@@ -40,7 +41,7 @@
           </p>
           <br>
           <p>
-            ✅ Updated to Ionic 8.4, Vue 3.5, and Vite 6.0 on 15 Jan 2025.
+            ✅ Updated to Ionic 8.7, Vue 3.5, Capacitor 8, and Vite 7.3 on 4 Jan 2026.
           </p>
           <br>
         <ion-button fill="outline" href="https://github.com/dolthead/vue-components/tree/main/src/components">
