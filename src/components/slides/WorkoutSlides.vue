@@ -12,8 +12,7 @@ import 'swiper/css';
             <swiper-slide>
                 <div class="card">
                     <div class="event">
-                        <img src="http://pngfreepic.com/wp-content/uploads/2021/06/fitness-32-276x350.png?v=1664972359"
-                            alt="Live Workout" />
+                        <img src="/assets/workout-pexels-olly-864939.jpg" alt="Live Workout" />
                         <a class="date">
                             <ion-icon :icon="time"></ion-icon>
                             5:45 AM
@@ -32,8 +31,7 @@ import 'swiper/css';
             <swiper-slide>
                 <div class="card">
                     <div class="event">
-                        <img src="http://pngfreepic.com/wp-content/uploads/2021/06/fitness-png-72-227x350.png?v=1664972521"
-                            alt="Live Workout" />
+                        <img src="/assets/workout-pexels-pavel-danilyuk-6339356.jpg" alt="Live Workout" />
                         <a class="date">
                             <ion-icon :icon="calendarClear"></ion-icon>
                             01 Dec 22
@@ -52,8 +50,7 @@ import 'swiper/css';
             <swiper-slide>
                 <div class="card">
                     <div class="event">
-                        <img src="http://pngfreepic.com/wp-content/uploads/2021/06/fitness-png-64-261x350.png?v=1664972502"
-                            alt="Live Workout" />
+                        <img src="/assets/workout-pexels-tima-miroshnichenko-5750852.jpg" alt="Live Workout" />
                         <a class="date">
                             <ion-icon :icon="calendarClear"></ion-icon>
                             17 DEC 22
@@ -111,12 +108,17 @@ import 'swiper/css';
             .event {
 
                 img {
-                    width: 172px;
-                    height: 204px;
-                    object-fit: contain;
-                    top: -5px;
+                    width: 152px;
+                    // height: 204px;
+                    height: 100%;
+                    // object-fit: contain;
+                    object-fit:scale-down;
+                    // top: -5px;
+                    top: 10px;
                     position: absolute;
-                    right: -16px;
+                    // right: -16px;
+                    right: 0;
+                    // scale: 0.8;
                 }
 
                 .date {

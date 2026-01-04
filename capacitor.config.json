@@ -1,6 +1,5 @@
 {
 	"appId": "com.simplybest.ionicvue",
 	"appName": "Ionic Vue",
-	"webDir": "dist",
-	"bundledWebRuntime": false
+	"webDir": "dist"
 }

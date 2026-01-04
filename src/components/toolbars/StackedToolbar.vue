@@ -12,7 +12,8 @@ import { menu, personCircleOutline } from 'ionicons/icons';
                 </ion-button>
             </ion-buttons>
             <ion-label class="ion-text-center logo">
-                <img src="https://codemyionic.com/assets/icon/logo.svg" alt="CodeMyIonic" /><span>CodeMyIonic</span>
+                <!-- <img src="https://codemyionic.com/assets/icon/logo.svg" alt="CodeMyIonic" /><span>CodeMyIonic</span> -->
+                <img src="/assets/sidh41-32062337.jpeg" alt="CodeMyIonic" /><span>CodeMyIonic</span>
             </ion-label>
             <ion-buttons slot="end">
                 <ion-button color="primary">
@@ -45,6 +46,7 @@ ion-toolbar {
             margin: 0 auto;
             display: block;
             width: 25px;
+            border-radius: 50%;
         }
     }
 
